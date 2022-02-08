@@ -1,0 +1,10 @@
+.logo {
+  display: inline-flex;
+
+  img {
+    width: 4rem;
+    height: 4rem;
+
+    object-fit: contain;
+  }
+}

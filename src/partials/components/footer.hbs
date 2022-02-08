@@ -1,0 +1,42 @@
+<footer
+    class="footer {{#if isBlack}}{{else}}light{{/if}}">
+    <div class="container footer__content">
+        <div class="footer__head">
+            <a href="#" class="footer__logo">
+            {{#if isBlack}}
+            <img src="/img/logo.png" alt="">
+            {{else}}
+            <img src="/img/logo-dark.png" alt="">
+            {{/if}}
+            </a>
+        </div>
+        <div class="footer__nav">
+            <div class="footer__nav_col">
+            <div class="footer__label">Отдел продаж</div>
+            <a href="mailto:sale@npkzt.com " class="footer__link">sale@npkzt.com </a>
+            </div>
+            <div class="footer__nav_col">
+            <div class="footer__label">Общий отдел и бухгалтерия</div>
+            <a href="mailto:acc@npkzt.com " class="footer__link">acc@npkzt.com </a>
+            </div>
+            <div class="footer__nav_col">
+            <div class="footer__label">Техслужба и лаборатория</div>
+            <a href="mailto:tehnolog@npkzt.com" class="footer__link">tehnolog@npkzt.com</a>
+            </div>
+            <div class="footer__nav_col">
+            <div class="footer__label">Адрес</div>
+            <span class="footer__link">Ул. Липатова 37, к.9, Казань</span>
+            </div>
+            <div class="footer__nav_col footer__nav_col--right">
+            <div class="designed_by">
+                Создание сайта <br>
+                {{#if isBlack}}
+                <img src="/img/mv_logo.svg" alt="">
+                {{else}}
+                <img src="/img/mv_logo_dark.svg" alt="">
+                {{/if}}
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>

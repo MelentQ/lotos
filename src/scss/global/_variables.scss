@@ -1,0 +1,33 @@
+:root {
+  --max-container-width: 160rem;
+  --max-container-width2: 106rem;
+  --content-padding: 4rem;
+  --primary-color: #40D0D5;
+  --text-color: black;
+}
+
+@media screen and (max-width: 1199px) {
+  :root {
+    --content-padding: 2.5rem;
+  }
+}
+
+$dark: #151515;
+$dark2: #222;
+$white: #fff;
+$accent: #40D0D5;
+$gray: #676767;
+$gray2: #DEDEDE;
+$gray3: #404040;
+$gray4: #D8D8D8;
+$gray5: #D5D5D5;
+$black: #000;
+
+$minWidth: 375;
+$maxWidth: 1680; // Ширина макета
+$base-transition-time: 0.3s;
+$base-transition-easing: ease;
+
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+$modal-bg-color: white;

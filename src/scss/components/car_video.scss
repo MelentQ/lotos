@@ -1,0 +1,124 @@
+.car_video {
+  position: fixed;
+  top: -7px;
+  right: -360px;
+  width: 1680px;
+  height: 1050px;
+  transition: transform .1s linear, opacity .3s linear .3s;
+  z-index: -1;
+  opacity: 0;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  circle {
+    opacity: 0.5;
+  }
+  image {
+    transition: opacity .4s ease;
+    mask: url("#cursorMask");
+  }
+  &.loaded {
+    opacity: 1;
+  }
+}
+.car_video--filled {
+  image {
+    opacity: .5;
+  }
+  circle {
+    opacity: 0;
+  }
+}
+.car_video__second_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.car_video__mark {
+  position: absolute;
+  transition: opacity .2s ease;
+  z-index: 1;
+  opacity: 0.5;
+  width: 65px;
+  height: 64px;
+  &.active {
+    opacity: 1;
+    .car_video__mark_content {
+      transform: translate(0, 0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  &.disabled {
+    opacity: 0;
+    .car_video__mark_content {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  svg {
+    width: 65px;
+    height: 64px;
+  }
+}
+.car_video__mark--materials {
+  top: 429px;
+  right: 746px;
+}
+.car_video__mark_content {
+  position: absolute;
+  left: -47px;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+  width: 309px;
+  padding-top: 35px;
+  transform: translate(0, 20px);
+}
+.car_video__mark_icon {
+  margin-right: 15px;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  svg {
+    display: block;
+    max-width: 64px;
+    max-height: 64px;
+  }
+}
+.car_video__mark_title {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.car_video__mark_title-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  height: 80%;
+  background-color: red;
+}
+.car_video__mark_link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #40D0D5;
+}

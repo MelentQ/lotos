@@ -1,0 +1,32 @@
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideUpMd {
+  0% {
+    transform: translate(0, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideUpSm {
+  0% {
+    transform: translate(0, 25px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes nextIcon {
+  0% {
+    transform: translate(0, -50%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

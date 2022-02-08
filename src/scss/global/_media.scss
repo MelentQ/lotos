@@ -1,0 +1,121 @@
+@media (max-width: 1199px) {
+  .header__logo {
+    margin-right: 20px;
+  }
+  .header__right {
+    display: none;
+  }
+  .header__left {
+    width: 100%;
+  }
+  .header__phone2 {
+    display: block;
+    margin-left: auto;
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+  .header__products_text {
+    display: none;
+  }
+  .header__products__burger {
+    margin-right: 0;
+  }
+  .header {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .socials {
+    flex-direction: row;
+  }
+  .socials__item {
+    margin-bottom: 0;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .section_title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .feature {
+    padding: 60px 30px;
+  }
+  .feature__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 5px;
+  }
+  .feature__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .features_list {
+    margin-bottom: -10px;
+  }
+  .features_list__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .feature--sm {
+    padding: 29px 30px;
+    .feature__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .header__logo {
+    width: 88px;
+  }
+  .footer__head {
+    margin-bottom: 40px;
+  }
+  .footer__nav_col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__nav {
+    margin-bottom: -20px;
+  }
+  .footer__nav_col--right {
+    margin-top: 26px;
+  }
+  .footer__label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .footer__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .designed_by {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .car_video {
+    width: 1100px;
+    height: 687px;
+    top: 6px;
+    right: -420px;
+    image {
+      width: 1100px;
+      height: 687px;
+    }
+  }
+  .car_video__mark {
+    display: none;
+  }
+  .go_next__icon_wrap {
+    margin-left: 23px;
+  }
+  .footer__content {
+    transform: none;
+  }
+}
+@media (max-width: 400px) {
+  .header__phone2 {
+    font-size: 12px;
+  }
+};

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:description" content="Описание">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://via.placeholder.com/350x150">
+    <meta property="og:site_name" content="Бренд или имя сайта">
+    <meta property="og:locale" content="ru_RU">
+
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="assets/backend/backend.css" />
+
+    <title>
+        {{ title }}
+    </title>
+</head>
+
+<body class="no-touch {{#if isBlack}}blackPage{{/if}}" ontouchstart="">
+    <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        {{> sprite }}
+    </div>
+    {{>preloader}}
+    {{>mob_menu}}
+    {{> header }}
+    <div class="mainContainer">
+        {{#block "main"}}
+
+        {{/block}}
+    </div>
+    {{> footer }}
+    {{>modal-order}}
+    {{> ie-placeholder }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/customParseFormat.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8-beta.7/jquery.inputmask.min.js"></script>
+    {{!-- <script src="js/libs/choices.min.js"></script>
+    <script src="js/libs/circletype.min.js"></script>
+    <script src="js/libs/kinetic.min.js"></script>
+    <script src="js/libs/bodyScrollLock.min.js"></script>
+    <script src="js/libs/perfect-scrollbar.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script> --}}
+    <script src="js/app.js"></script>
+    <script src="assets/backend/backend.js"></script>
+</body>
+
+</html>

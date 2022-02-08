@@ -1,0 +1,136 @@
+.partners_section {
+  margin-bottom: 191px;
+  .section_title {
+    line-height: 50px;
+  }
+}
+.partners_section__head {
+  margin-bottom: 88px;
+}
+.partners_section__list {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.partners_list_title {
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 25px;
+}
+.partners_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -16px;
+}
+.partners_list__item {
+  width: 20%;
+  padding: 0 7.5px;
+  margin-bottom: 16px;
+  transition: transform .8s ease;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.partners_list__item--lg {
+  width: 40%;
+}
+.partners_list--lg {
+  margin-left: -11px;
+  margin-right: -11px;
+  .partners_list__item {
+    padding: 0 11px;
+    width: 33.33%;
+  }
+}
+.partners_list__button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.partners_list__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #40D0D5;
+  font-family: Magistral;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+  border: 1px solid #40D0D5;
+  border-radius: 170px;
+  white-space: nowrap;
+  min-height: 150px;
+  text-transform: uppercase;
+  padding: 0 60px;
+  i {
+    font-size: 24px;
+    margin-left: 13px;
+  }
+}
+.partners_section__mobile {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .partners_section__head {
+    margin-bottom: 40px;
+    .section_title {
+      line-height: 26px;
+    }
+  }
+  .partners_list_title {
+    display: none;
+  }
+  .partners_section__desktop {
+    display: none;
+  }
+  .partners_section__mobile {
+    display: block;
+  }
+  .partners_list {
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    overflow: auto;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 40px;
+    padding: 0 25px;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+  .partners_list__item {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    width: 160px;
+    height: 106px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .partners_list__button {
+    min-height: unset;
+    padding: 26px 10px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .partners_section {
+    margin-bottom: 96px;
+  }
+}
+@media (max-width: 400px) {
+  .partners_list__button {
+    font-size: 16px;
+  }
+};

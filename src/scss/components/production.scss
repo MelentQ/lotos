@@ -1,0 +1,139 @@
+.production_section {
+  margin-bottom: 195px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.production_section__head {
+  margin-bottom: 108px;
+}
+.product_features {
+  display: flex;
+  flex-direction: column;
+}
+.product_features__item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.product_feature {
+  display: inline-flex;
+  align-items: center;
+  &:hover {
+    .product_feature__icon {
+      path:nth-child(1) {
+        stroke: #40D0D5;
+      }
+    }
+    .product_feature__text {
+      color: #40D0D5;
+    }
+  }
+}
+.product_feature__icon {
+  margin-right: 30px;
+  font-size: 130px;
+  svg {
+    display: block;
+  }
+  path {
+    transition: stroke .4s ease;
+  }
+}
+.product_feature__text {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 25px;
+  max-width: 485px;
+  transition: color .4s ease;
+}
+.production {
+  &__inner {
+    max-width: 800px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__item-link {
+    display: block;
+
+    &:hover,
+    &:focus {
+      .production__item-name {
+        color: #40D0D5;
+      }
+    }
+  }
+  &__item-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    height: 340px;
+    padding: 60px 0 80px;
+
+    background: #222222;
+    border-radius: 140px;
+
+    @media (max-width: 767px) {
+      height: 240px;
+      padding: 40px 0 60px;
+    }
+
+    img {
+      max-width: 80%;
+      max-height: 100%;
+    }
+  }
+  &__item-name {
+    position: relative;
+    top: -70px;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: white;
+
+    transition: color 0.3s ease;
+
+    @media (max-width: 1199px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 767px) {
+      top: -50px;
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .production_section__head {
+    margin-bottom: 30px;
+  }
+  .product_feature__icon {
+    margin-right: 18px;
+    svg {
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .product_feature__text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .product_features__item {
+    margin-bottom: 1px;
+  }
+  .production_section {
+    margin-bottom: 80px;
+  }
+};

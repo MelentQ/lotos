@@ -1,0 +1,24 @@
+.go_next {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 15px;
+  pointer-events: auto;
+  color: #D8D8D8;
+}
+.go_next__icon_wrap {
+  margin-left: 133px;
+  color: #40D0D5;
+  font-size: 18px;
+  height: 20px;
+  overflow: hidden;
+}
+.go_next__icon {
+  display: flex;
+  flex-direction: column;
+  animation: nextIcon 1s infinite linear;
+  i {
+    margin-bottom: 9px;
+  }
+}
