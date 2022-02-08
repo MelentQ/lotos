@@ -31,6 +31,8 @@ import './components/geography';
 import './components/partners';
 import alignHeights from './custom/alignHeights';
 import initSliders from './custom/initSliders';
+import validateForms from './custom/formValidation';
+import initMaps from './custom/initMaps';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
     editableTextContainer();
     alignHeights('.steps__list', '.steps__list-item-name');
     initSliders();
+    validateForms();
+    initMaps();
 });
 
 document.addEventListener('lazyloaded', () => {

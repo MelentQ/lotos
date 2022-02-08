@@ -17,33 +17,6 @@ $(document).ready(function () {
 		bodyScrollLock.disableBodyScroll(popup[0]);
 
 		handleForm(popupId)
-
-		const inputs = Array.from(document.querySelectorAll('.js-input'));
-		const placeholders = Array.from(document.querySelectorAll('.js-input-placeholder'));
-		if (inputs && placeholders) {
-			inputs.forEach((input, i) => {
-				input.addEventListener('input', () => {
-					if (input.value) {
-						placeholders[i].classList.add('active');
-					} else {
-						placeholders[i].classList.remove('active');
-					}
-				})
-			})
-		}
-		// const inputs2 = $('.js-input');
-		// const placeholders2 = $('.js-input-placeholder');
-		// if (inputs2 && placeholders2) {
-		// 	inputs2.each((i) => {
-		// 		$(this).on('change', () => {
-		// 			if (inputs2[i].value) {
-		// 				placeholders2[i].addClass('active');
-		// 			} else {
-		// 				placeholders2[i].removeClass('active');
-		// 			}
-		// 		})
-		// 	})
-		// }
 	});
 
 	// Закрытие попапа

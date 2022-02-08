@@ -1,0 +1,29 @@
+.contacts-form {
+
+  padding-bottom: 4rem;
+
+  &__inner {
+    padding: 8rem;
+
+    background: #1C1C1C;
+    border: 3px solid var(--primary-color);
+    border-radius: 24px;
+
+    @include breakpoint(tablet) {
+      padding: 6rem;
+    }
+    @include breakpoint(small-tablet) {
+      padding: 4rem 3rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+
+    @extend %fs-h3;
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 3.4rem;
+    }
+  }
+}
