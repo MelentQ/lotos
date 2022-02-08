@@ -98,9 +98,9 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
-  $(".mainContainer").css("padding-top", $(".header").outerHeight()+"px");
+  $(".bannerContainer").css("padding-top", $(".header").outerHeight()+"px");
   $(window).resize(function() {
-      $(".mainContainer").css("padding-top", $(".header").outerHeight()+"px");
+      $(".bannerContainer").css("padding-top", $(".header").outerHeight()+"px");
   });
 
   $(window).scroll(function() {

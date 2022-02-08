@@ -41,14 +41,17 @@
     }
   }
   &__logo {
-    margin-right: 116px;
+    margin-right: 10.8rem;
     width: 154px;
     img {
       display: block;
       max-width: 100%;
     }
+    @include breakpoint(laptop) {
+      margin-right: 4rem;
+    }
     @include breakpoint(tablet) {
-      margin-right: 20px;
+      margin-right: 2rem;
       width: 88px;
     }
   }
@@ -56,9 +59,9 @@
     color: $white !important;
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 500;
     border: 1px solid $white;
     border-radius: 20px;
     padding: 8px 17px;
@@ -70,6 +73,10 @@
         background-color: $accent;
       }
     }
+    @include breakpoint(laptop) {
+      font-size: 16px;
+    }
+
     &__burger {
       margin-right: 16px;
       span {
@@ -98,19 +105,22 @@
     }
     a {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1;
       transition: color 0.3s ease;
       &:hover,
       &:focus {
         color: $accent;
       }
+      @include breakpoint(laptop) {
+        font-size: 16px;
+      }
     }
   }
   &__callback {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
     font-weight: 700;
     color: $accent !important;
@@ -119,6 +129,10 @@
     border: 1px solid $accent;
     span {
       margin-left: 11px;
+      font-size: 16px;
+    }
+
+    @include breakpoint(laptop) {
       font-size: 16px;
     }
   }
@@ -136,14 +150,18 @@
     }
   }
   &__phone {
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 1;
 
     transition: color 0.3s ease;
 
     &:hover {
       color: $accent;
+    }
+
+    @include breakpoint(laptop) {
+      font-size: 16px;
     }
   }
   &__phone2 {

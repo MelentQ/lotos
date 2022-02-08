@@ -1,11 +1,7 @@
 .bannerContainer {
-  margin-top: 3.9rem;
+  height: 100vh;
   min-height: 64.7rem;
   position: relative;
-  margin-bottom: 19.8rem;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 .bannerContainer.loaded {
   .banner__title {
@@ -24,7 +20,7 @@
 .bannerContainer__social {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 2rem;
   width: 100%;
   pointer-events: none;
   padding-left: 1.3rem;
@@ -32,19 +28,17 @@
 .bannerContainer__next {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 2rem;
   width: 100%;
   pointer-events: none;
 }
 .banner {
   &__title {
-    font-size: 5rem;
-    line-height: 1.1;
-    font-family: Magistral;
+    @extend %fs-h1;
   }
   &__desc {
-    font-size: 2rem;
-    line-height: 1;
+    font-size: 2.4rem;
+    line-height: 1.1;
     margin-top: 4.3rem;
     font-weight: 700;
   }
@@ -58,14 +52,8 @@
     margin-bottom: 10.6rem;
     min-height: auto;
   }
-  .banner__title {
-    font-size: 3.6rem;
-    line-height: 1.1;
-  }
   .banner__desc {
     margin-top: 4rem;
-    font-size: 2.2rem;
-    line-height: 1.1;
   }
   .bannerContainer__social {
     position: static;
