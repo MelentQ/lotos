@@ -78,11 +78,11 @@
     }
 
     h5 {
-        @extend %fs-h5;
+        @extend %fs-t1;
     }
 
     h6 {
-        @extend %fs-t1;
+        @extend %fs-t2;
     }
 
     p {
@@ -240,35 +240,35 @@
 
 .h1 {
     font-size: 50px;
-    line-height: 50px;
+    line-height: 1;
     font-weight: 700;
 
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
         font-size: 24px;
         line-height: 1.1;
     }
 }
 .mb38 {
     margin-bottom: 38px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
         margin-bottom: 24px;
     }
 }
 .mb55 {
     margin-bottom: 55px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
         margin-bottom: 24px;
     }
 }
 .mb73 {
     margin-bottom: 73px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
         margin-bottom: 24px;
     }
 }
 .mb103 {
     margin-bottom: 103px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
         margin-bottom: 24px;
     }
 }
@@ -278,15 +278,20 @@
 
 .section_title {
     font-size: 48px;
-    line-height: 45px;
+    line-height: 1;
     font-weight: bold;
+
+    @include breakpoint(tablet) {
+        font-size: 24px;
+        line-height: 1.1;
+    }
 }
 .sm_button {
     display: inline-flex;
     align-items: center;
     font-weight: bold;
     font-size: 20px;
-    line-height: 15px;
+    line-height: 1;
     padding: 7px;
     color: #40D0D5;
     border: 1px solid #40D0D5;

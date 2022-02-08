@@ -37,7 +37,7 @@
     width: 50px;
     height: 34px;
     margin-bottom: 62px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       margin-bottom: 18px;
     }
   }
@@ -46,7 +46,7 @@
     line-height: 1.1;
     font-weight: 700;
     margin-bottom: 26px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       font-size: 24px;
       margin-bottom: 30px;
     }
@@ -57,7 +57,7 @@
     font-size: 24px;
     line-height: 1.1;
     font-weight: 500;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       font-size: 16px;
       margin-bottom: 20px;
     }
@@ -87,7 +87,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       flex-direction: column-reverse;
       align-self: stretch;
 
@@ -97,7 +97,7 @@
   &__button {
     padding: 20px 35px;
     font-size: 18px;
-    line-height: 15px;
+    line-height: 1;
     font-weight: 500;
     font-family: inherit;
 
@@ -108,13 +108,13 @@
     color: #40D0D5;
     border: 1px solid #40D0D5;
     border-radius: 80px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       width: 100%;
       margin-bottom: 24px;
     }
   }
   &__item.checkbox {
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       width: 100%;
     }
   }
@@ -133,7 +133,7 @@
       outline: none !important;
       color: $gray4;
       font-size: 20px;
-      line-height: 20px;
+      line-height: 1;
       font-weight: 700;
       padding-top: 26px;
       padding-bottom: 19px;
@@ -142,7 +142,7 @@
           top: 0;
           transform: translateY(0);
           font-size: 14px;
-          line-height: 16px;
+          line-height: 1.1;
           font-weight: 400;
           color: $gray5;
         }
@@ -154,7 +154,7 @@
       left: 0;
       transform: translateY(-50%);
       font-size: 20px;
-      line-height: 20px;
+      line-height: 1;
       font-weight: 500;
       color: $gray4;
       opacity: 0.5;
@@ -167,7 +167,7 @@
         top: 0;
         transform: translateY(0);
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.1;
         font-weight: 400;
         color: $gray5;
       }

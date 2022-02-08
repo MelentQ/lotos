@@ -134,35 +134,35 @@
 
 @mixin breakpoint($class) {
     @if $class == large-desktop {
-        @media only screen and (max-width: (1600px)) {
+        @media only screen and (max-width: (1999px)) {
             @content;
         }
     } @else if $class == desktop {
-        @media only screen and (max-width: (1400px)) {
+        @media only screen and (max-width: (1599px)) {
             @content;
         }
     } @else if $class == laptop {
-        @media only screen and (max-width: (1200px)) {
+        @media only screen and (max-width: (1399px)) {
             @content;
         }
     } @else if $class == tablet {
-        @media only screen and (max-width: (1024px)) {
+        @media only screen and (max-width: (1199px)) {
             @content;
         }
     } @else if $class == small-tablet {
-        @media only screen and (max-width: (768px)) {
+        @media only screen and (max-width: (1023px)) {
             @content;
         }
     } @else if $class == mobile {
-        @media only screen and (max-width: (640px)) {
+        @media only screen and (max-width: (767px)) {
             @content;
         }
     } @else if $class == small-mobile {
-        @media only screen and (max-width: (576px)) {
+        @media only screen and (max-width: (639px)) {
             @content;
         }
     } @else if $class == supersmall-mobile {
-        @media only screen and (max-width: (370px)) {
+        @media only screen and (max-width: (399px)) {
             @content;
         }
     }

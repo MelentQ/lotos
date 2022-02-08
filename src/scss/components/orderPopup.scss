@@ -1,7 +1,7 @@
 .orderPopup {
   &__title {
     margin-bottom: 60px;
-    @media (max-width: 1023px) {
+    @include breakpoint(small-tablet) {
       margin-bottom: 40px;
     }
   }
@@ -12,13 +12,13 @@
   &__left {
     width: 300px;
     margin-right: 85px;
-    @media (max-width: 1023px) {
+    @include breakpoint(small-tablet) {
       display: none;
     }
   }
   &__right {
     width: calc(100% - 385px);
-    @media (max-width: 1023px) {
+    @include breakpoint(small-tablet) {
       width: 100%;
     }
   }

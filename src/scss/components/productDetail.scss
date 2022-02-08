@@ -6,18 +6,18 @@
   display: flex;
   align-items: flex-start;
   font-size: 16px;
-  line-height: 24px;
-  @media (max-width: 1023px) {
+  line-height: 1.5;
+  @include breakpoint(small-tablet) {
     flex-direction: column;
     margin-bottom: 80px;
   }
-  @media (max-width: 767px) {
+  @include breakpoint(mobile) {
     margin-bottom: 60px;
   }
   &__left {
     width: 300px;
     margin-right: 90px;
-    @media (max-width: 1023px) {
+    @include breakpoint(small-tablet) {
       margin-right: 0;
       margin-bottom: 90px;
       max-width: 300px;
@@ -27,7 +27,7 @@
   }
   &__right {
     width: calc(100% - 390px);
-    @media (max-width: 1023px) {
+    @include breakpoint(small-tablet) {
       width: 100%;
     }
   }
@@ -35,7 +35,7 @@
     font-size: 20px;
     line-height: 1.2;
     font-weight: 400;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       font-size: 16px;
     }
   }
@@ -66,7 +66,7 @@
     text-transform: uppercase;
     text-align: center;
     transition: all 0.3s linear;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       font-size: 20px;
       padding: 25px 0;
       padding-right: 20px;
@@ -119,16 +119,16 @@
     &:last-child {
       margin-bottom: 0;
     }
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       margin-bottom: 40px;
     }
   }
   &__title {
     font-size: 26px;
-    line-height: 25px;
+    line-height: 1;
     font-weight: 700;
     margin-bottom: 30px;
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       font-size: 20px;
       margin-bottom: 20px;
     }
@@ -136,11 +136,11 @@
   &__adv {
     display: flex;
     align-items: flex-start;
-    @media (max-width: 1023px) {
+    @include breakpoint(small-tablet) {
       flex-direction: column;
       gap: 30px;
     }
-    @media (max-width: 767px) {
+    @include breakpoint(mobile) {
       font-size: 14px;
     }
     & > div {
@@ -150,7 +150,7 @@
       &:nth-child(2n) {
         margin-right: 0;
       }
-      @media (max-width: 1023px) {
+      @include breakpoint(small-tablet) {
         margin-right: 0;
       }
     }
@@ -159,20 +159,20 @@
       padding: 3px;
       color: $accent;
       margin-right: 20px;
-      @media (max-width: 1023px) {
+      @include breakpoint(small-tablet) {
         font-size: 35px;
       }
     }
     &__content {
       width: calc(100% - 76px);
-      @media (max-width: 767px) {
+      @include breakpoint(mobile) {
         width: 100%;
       }
     }
     &__title {
       font-weight: 500;
       margin-bottom: 16px;
-      @media (max-width: 767px) {
+      @include breakpoint(mobile) {
         margin-bottom: 8px;
       }
     }
@@ -187,11 +187,11 @@
       &:last-child {
         margin-bottom: 0;
       }
-      @media (max-width: 1023px) {
+      @include breakpoint(small-tablet) {
         display: grid;
         grid-template-columns: 60px 1fr;
       }
-      @media (max-width: 767px) {
+      @include breakpoint(mobile) {
         margin-bottom: 18px;
       }
     }
@@ -203,7 +203,7 @@
       display: inline-block;
       font-family: Magistral;
       color: $accent;
-      @media (max-width: 1023px) {
+      @include breakpoint(small-tablet) {
         margin-bottom: 0;
         font-size: 24px;
         width: fit-content;
@@ -225,7 +225,7 @@
     &__text {
       color: #222222;
       font-weight: 400;
-      @media (max-width: 767px) {
+      @include breakpoint(mobile) {
         font-size: 14px;
       }
     }
@@ -238,7 +238,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 22px 0;
-      @media (max-width: 767px) {
+      @include breakpoint(mobile) {
         flex-direction: column;
         align-items: flex-start;
         padding: 15px 0;
@@ -247,9 +247,9 @@
         &:nth-child(1) {
           margin-right: 50px;
           font-size: 16px;
-          line-height: 20px;
+          line-height: 1.25;
           opacity: 0.6;
-          @media (max-width: 767px) {
+          @include breakpoint(mobile) {
             font-size: 14px;
             margin-right: 0;
             margin-bottom: 4px;
@@ -257,9 +257,9 @@
         }
         &:nth-child(2) {
           font-size: 16px;
-          line-height: 20px;
+          line-height: 1.25;
           text-align: right;
-          @media (max-width: 767px) {
+          @include breakpoint(mobile) {
             font-size: 14px;
           }
         }

@@ -4,13 +4,13 @@
 .output_section__title {
   font-size: 20px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1;
   margin-bottom: 31px;
 }
-@media (max-width: 1199px) {
+@include breakpoint(tablet) {
   .output_section__title {
     font-size: 13px;
-    line-height: 16px;
+    line-height: 1.2;
     margin-bottom: 20px;
   }
   .output_section {

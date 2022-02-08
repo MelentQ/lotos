@@ -1,7 +1,7 @@
 .features_section__head {
   margin-bottom: 62px;
   .section_title {
-    line-height: 45px;
+    line-height: 1;
   }
 }
 .features_section {
@@ -20,11 +20,11 @@
 .features_section__text {
   font-weight: bold;
   font-size: 26px;
-  line-height: 25px;
+  line-height: 1;
   margin-bottom: 24px;
   max-width: 452px;
 }
-@media (max-width: 1199px) {
+@include breakpoint(tablet) {
   .features_section__head {
     margin-bottom: 30px;
   }
@@ -37,7 +37,7 @@
   }
   .features_section__text {
     font-size: 13px;
-    line-height: 16px;
+    line-height: 1.1;
     margin-bottom: 10px;
   }
   .features_section {
@@ -50,10 +50,18 @@
   flex-wrap: wrap;
   margin-left: -10px;
   margin-right: -10px;
+
+  @include breakpoint(tablet) {
+    margin-bottom: -10px;
+  }
 }
 .features_list__item {
   padding: 0 10px;
   width: 25%;
+  @include breakpoint(tablet) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
   .feature {
     height: 100%;
   }
@@ -69,23 +77,46 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include breakpoint(tablet) {
+    padding: 60px 30px;
+  }
 }
 .feature__title {
   color: #40D0D5;
   font-size: 54px;
-  line-height: 66px;
+  line-height: 1.2;
   margin-bottom: 4px;
+
+  @include breakpoint(tablet) {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
 }
 .feature__text {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
+
+  @include breakpoint(tablet) {
+    font-size: 14px;
+    line-height: 1.1;
+  }
 }
 .feature--sm {
   padding: 30px 26px;
+  @include breakpoint(tablet) {
+    padding: 29px 30px;
+  }
   .feature__title {
     font-size: 19px;
-    line-height: 24px;
+    line-height: 1.2;
     margin-bottom: 9px;
+
+    @include breakpoint(tablet) {
+      font-size: 18px;
+      line-height: 1.2;
+    }
   }
 }
 [data-feature-anim-scale] {
