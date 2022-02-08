@@ -1,0 +1,18 @@
+<section class="steps">
+  <div class="container2">
+    <div class="steps__inner">
+      <h2 class="steps__title">Этапы сотрудничества</h2>
+      <div class="swiper js-init-mobile-touch-slider" data-slides="1.4" data-space="24">
+        <ul class="swiper-wrapper steps__list">
+          {{#each data}}
+          <li class="swiper-slide steps__list-item">
+            <img class="steps__list-item-icon" src="{{icon}}" alt="{{text}}">
+            <h3 class="steps__list-item-name">{{{text}}}</h3>
+            <svg class="steps__list-item-arrow"><use xlink:href="#step-arrow"></svg>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

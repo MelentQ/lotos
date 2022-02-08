@@ -1,4 +1,5 @@
 import * as bodyScrollLock from "body-scroll-lock";
+import percentageSeen from './components/percentageSeen';
 
 $(window).on("load", function() {
   $(".page_preloader").addClass("page_preloader--hidden");

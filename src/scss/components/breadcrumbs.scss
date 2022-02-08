@@ -1,7 +1,18 @@
 .breadcrumbs {
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1.1;
-  margin-bottom: 17px;
+  margin-bottom: 2rem;
+  margin-top: 12rem;
+
+  @include breakpoint(tablet) {
+    margin-top: 6rem;
+  }
+  @include breakpoint(small-tablet) {
+    margin-top: 4rem;
+  }
+  @include breakpoint(mobile) {
+    margin-top: 0;
+  }
 
   li {
     display: inline;

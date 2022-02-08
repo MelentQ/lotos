@@ -29,6 +29,8 @@ import './components/banner';
 import './components/feedback';
 import './components/geography';
 import './components/partners';
+import alignHeights from './custom/alignHeights';
+import initSliders from './custom/initSliders';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // custom
 
     editableTextContainer();
+    alignHeights('.steps__list', '.steps__list-item-name');
+    initSliders();
 });
 
 document.addEventListener('lazyloaded', () => {

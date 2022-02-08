@@ -1,0 +1,26 @@
+<section class="partners">
+  <div class="container2">
+    <h2 class="partners__title">{{title}}</h2>
+    <div class="swiper js-init-mobile-touch-slider" data-grid="2" data-slides="2" data-delay="3000" data-space="10">
+      <ul class="swiper-wrapper partners__list">
+        {{#each data.items}}
+        <li class="swiper-slide partners__list-item partners__list--desktop">
+          <a class="partners__list-item-link" target="_blank" href="#" title="Имя партнёра">
+            {{#if this.name}}
+            <span class="partners__list-item-name">{{this.name}}</span>
+            {{else}}
+            <img class="partners__list-item-image" src="{{this.logo}}" alt="">
+            {{/if}}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="partners__button-container">
+      <a href="#" class="partners__button">
+        Стать партнером
+        <i class="icon-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>

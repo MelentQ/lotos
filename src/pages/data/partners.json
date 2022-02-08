@@ -1,0 +1,59 @@
+{
+    "title": "Партнёрам",
+    "isBlack": true,
+    "cards": {
+        "text": "<h2>Средняя доходность дилера в России</h2>",
+        "items": [
+            {
+                "image": "img/cards/card-1.jpg",
+                "title": "~ 12 000 р.",
+                "text": "антикоррозийная обработка"
+            },
+            {
+                "image": "img/cards/card-2.jpg",
+                "title": "~ 3 000 р.",
+                "text": "коврики в салон и багажник"
+            },
+            {
+                "image": "img/cards/card-3.jpg",
+                "title": "~ 20 000 р.",
+                "text": "керамическое покрытие"
+            },
+            {
+                "image": "img/cards/card-4.jpg",
+                "title": "~ 6 500 р.",
+                "text": "защита картера и защита бампера"
+            }
+        ]
+    },
+    "steps": [
+        {
+            "icon": "img/steps/box.svg",
+            "text": "отправка пробной <br> партии"
+        },
+        {
+            "icon": "img/steps/product.svg",
+            "text": "ДЕМОНСТРАЦИЯ РАБОТЫ <br> С ПРОДУКТОМ"
+        },
+        {
+            "icon": "img/steps/education.svg",
+            "text": "ОБУЧЕНИЕ ОТДЕЛА ПРОДАЖ И&nbsp;ТЕХНИЧЕСКОГО ПЕРСОНАЛА"
+        },
+        {
+            "icon": "img/steps/doc.svg",
+            "text": "ПРЕДОСТАВЛЕНИЕ В ПОЛЬЗОВАНИЕ ОБОРУДОВАНИЯ"
+        },
+        {
+            "icon": "img/steps/delivery.svg",
+            "text": "БЕСПЛАТНАЯ ДОСТАВКА <br> ПРОДУКЦИИ"
+        },
+        {
+            "icon": "img/steps/card.svg",
+            "text": "ОТСРОЧКА ПЛАТЕЖА"
+        },
+        {
+            "icon": "img/steps/help.svg",
+            "text": "СОПРОВОЖДЕНИЕ НА ВСЕХ ЭТАПАХ РЕАЛИЗАЦИИ ПРОДУКЦИИ"
+        }
+    ]
+}

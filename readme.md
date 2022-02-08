@@ -1,3 +1,19 @@
+# Торговый дом "Лотос"
+
+## О проекте:
+
+* Доделываю начатую вёрстку за [Artrockets](https://artrockets.ru/)
+* Переписал почти всё
+* Натягиваться будет мной на сайты 24
+
+## Страницы:
+
+* [Главная](https://melentq.github.io/lotos/)
+* [Каталог (список разделов)](https://melentq.github.io/lotos/catalog)
+* [Каталог (раздел)](https://melentq.github.io/lotos/catalog-item)
+* [Каталог (детально)](https://melentq.github.io/lotos/item)
+* [Партнёрам](https://melentq.github.io/lotos/partners)
+
 # Handlebars Boilerplate
 
 Бойлерплейт на основе связки Gulp + Webpack с поддержкой SVG спрайтов и SCSS

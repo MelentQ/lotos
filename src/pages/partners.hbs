@@ -1,0 +1,36 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<div class="js-first-block"></div>
+
+<ul class="breadcrumbs container2">
+  <li>
+    <a href="#">Главная</a>
+  </li>
+  <li>
+    <a href="#">Партнёрам</a>
+  </li>
+</ul>
+
+<section class="intro-title">
+  <div class="container2">
+    <h1 class="intro-title__title">Партнерам</h1>
+  </div>
+</section>
+
+<section class="intro-text">
+  <div class="container2">
+    <div class="intro-text__text">
+        <p>Филиальная сеть продаж во всех регионах России обеспечивает бесперебойную поставку товаров</p>
+      </div>
+  </div>
+</section>
+
+{{>cards data=cards}}
+
+{{>steps data=steps}}
+
+{{>partners data=partners title="Уже работают с нами"}}
+
+{{/content}}
+{{/extend}}

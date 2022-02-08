@@ -1,0 +1,98 @@
+.cards {
+  padding: 6rem 0;
+
+  @include breakpoint(mobile) {
+    padding: 3rem 0;
+  }
+
+  &__inner {
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+
+    @include clamp(18, 20);
+    font-weight: 500;
+    line-height: 1.1;
+
+    h1, h2, h3, h4, h5, h6 {
+      @extend %fs-h3;
+    }
+
+    @include breakpoint(mobile) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+
+    @include breakpoint(small-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+
+    padding: 3rem 4rem;
+
+    overflow: hidden;
+
+    border-radius: 7rem;
+
+    @include breakpoint(mobile) {
+      padding: 3rem;
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(21, 21, 21, 0.5);
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__list-item-title {
+    position: relative;
+    z-index: 3;
+
+    margin-bottom: 0.4rem;
+
+    @include clamp(20, 24);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--primary-color);
+  }
+
+  &__list-item-text {
+    position: relative;
+    z-index: 3;
+
+    @extend %fs-t3;
+    line-height: 1.1;
+  }
+}
