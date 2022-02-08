@@ -12,9 +12,9 @@ $(window).on("load", function() {
       carImage.src = "img/auto/1.gif";
       carImage.onload = function() {
           var carImage2 = new Image();
-          carImage2.src = "./img/auto/2.gif";
+          carImage2.src = "img/auto/2.gif";
           carImage2.onload = function() {
-              $(".car_video").prepend('<img src="./img/auto/2.gif" alt="" class="car_video__second_image">')
+              $(".car_video").prepend('<img src="img/auto/2.gif" alt="" class="car_video__second_image">')
               $(".car_video>svg").html(($(".car_video svg").html())+'<image width="1680" height="1050" xlink:href="img/auto/1.gif" />');
               $(".car_video").addClass("loaded")
               initCarAnimation();
@@ -98,7 +98,7 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
-  $(".bannerContainer").css("padding-top", $(".header").outerHeight()+"px");
+  $(".js-first-block").css("padding-top", $(".header").outerHeight()+"px");
   $(window).resize(function() {
       $(".bannerContainer").css("padding-top", $(".header").outerHeight()+"px");
   });

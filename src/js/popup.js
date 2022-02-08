@@ -1,113 +1,5 @@
 import * as bodyScrollLock from "body-scroll-lock";
 
-function masks() {
-  const phoneInputs = Array.from(document.querySelectorAll('.js-phone-input'));
-	const phoneInputsLabels = Array.from(document.querySelectorAll('.js-phone-input-label'));
-
-  phoneInputs.forEach((input, i) => {
-      const instance = new Inputmask({
-				mask: '+7 (999) 999-99-99',
-				showMaskOnHover: false,
-				showMaskOnFocus: false
-			});
-      const inputElement = instance.mask(input);
-			$(input).inputmask("getmetadata");
-			$(input).on('input', () => {
-				if (input.value) {
-					phoneInputsLabels[i].classList.add('active');
-				} else {
-					phoneInputsLabels[i].classList.remove('active');
-				}
-			})
-
-  });
-
-  const onlyNumericInputs = Array.from(document.querySelectorAll('.js-numeric-input-decimals'));
-
-  onlyNumericInputs.forEach(input => {
-      input.addEventListener('input', () => {
-          const value = input.value;
-          const newCleanedValue = parseInt(value.replace(/[^\d]+/g, ''), 10);
-          if (isNaN(newCleanedValue)) {
-              input.value = '';
-          } else {
-              input.value = newCleanedValue.toLocaleString();
-          }
-      });
-  });
-
-  const onlyNumericInputsNoFormatting = Array.from(document.querySelectorAll('.js-numeric-input'));
-  
-  onlyNumericInputsNoFormatting.forEach(input => {
-      input.addEventListener('input', () => {
-          const value = input.value;
-          const newCleanedValue = parseInt(value.replace(/[^\d]+/g, ''), 10);
-          if (isNaN(newCleanedValue)) {
-              input.value = '';
-          } else {
-              input.value = newCleanedValue;
-          }
-      });
-  });
-}
-
-
-// Подгрузка html-контента в конец body
-function loadPopup(popupId, onOpen, data) {
-	var popup = $("#" + popupId);
-	var data = Object.assign($(this).data(), data);
-
-	if ($("#" + popupId).length) {
-		popup.addClass("active");
-		bodyScrollLock.disableBodyScroll(popup[0]);
-		if (typeof onOpen === "function") onOpen();
-	} else {
-		return $.post(
-			"/include/ajax/popup/" + popupId + ".php",
-			data,
-			function (data) {
-				var data = $("<div>" + data + "</div>");
-				var popup = $(data).find("#" + popupId);
-				$("body").append(data);
-				setTimeout(function () {
-					popup.addClass("active");
-				}, 30);
-				bodyScrollLock.disableBodyScroll(popup[0]);
-
-				masks()
-
-				const inputs = $('.js-input');
-				const placeholders = $('.js-input-placeholder');
-				if (inputs && placeholders) {
-					inputs.each((i) => {
-						$(this).on('change', () => {
-							if (input.value) {
-								placeholders[i].addClass('active');
-							} else {
-								placeholders[i].removeClass('active');
-							}
-						})
-					})
-				}
-
-				if (typeof initBanerSlider === "function") initBanerSlider();
-				if (typeof initRangeslider === "function") initRangeslider();
-				if (typeof initMasks === "function") initMasks();
-				if (typeof lazyload === "function") lazyload();
-				if (typeof initScroll === "function") initScroll();
-				if (typeof vacInnerDropzone === "function") vacInnerDropzone();
-				if (typeof documentDropzone === "function") documentDropzone();
-				if (typeof onOpen === "function") onOpen();
-				if (typeof initBankSlider === "function") initBankSlider();
-
-				$(".scrollbar.ps").each(function() {
-					$(this).data("ps").update()
-				})
-			}
-		);
-	}
-}
-
 // Закрыть попап
 function closePopup(popupId) {
 	var popup = $("#"+popupId);
@@ -124,25 +16,34 @@ $(document).ready(function () {
 		popup.addClass("active");
 		bodyScrollLock.disableBodyScroll(popup[0]);
 
-		// loadPopup.call(this, popupId, onOpen);
+		handleForm(popupId)
 
-		setTimeout(() => {
-			handleForm(popupId)
-
-			const inputs = Array.from(document.querySelectorAll('.js-input'));
-			const placeholders = Array.from(document.querySelectorAll('.js-input-placeholder'));
-			if (inputs && placeholders) {
-				inputs.forEach((input, i) => {
-					input.addEventListener('input', () => {
-						if (input.value) {
-							placeholders[i].classList.add('active');
-						} else {
-							placeholders[i].classList.remove('active');
-						}
-					})
+		const inputs = Array.from(document.querySelectorAll('.js-input'));
+		const placeholders = Array.from(document.querySelectorAll('.js-input-placeholder'));
+		if (inputs && placeholders) {
+			inputs.forEach((input, i) => {
+				input.addEventListener('input', () => {
+					if (input.value) {
+						placeholders[i].classList.add('active');
+					} else {
+						placeholders[i].classList.remove('active');
+					}
 				})
-			}
-		}, 1000)
+			})
+		}
+		// const inputs2 = $('.js-input');
+		// const placeholders2 = $('.js-input-placeholder');
+		// if (inputs2 && placeholders2) {
+		// 	inputs2.each((i) => {
+		// 		$(this).on('change', () => {
+		// 			if (inputs2[i].value) {
+		// 				placeholders2[i].addClass('active');
+		// 			} else {
+		// 				placeholders2[i].removeClass('active');
+		// 			}
+		// 		})
+		// 	})
+		// }
 	});
 
 	// Закрытие попапа
