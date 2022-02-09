@@ -177,11 +177,18 @@
                                 <address class="contacts__label">Россия, город Казань, Ул. Липатова 37, к.9</address>
                             </li>
                         </ul>
-                        <div class="contacts__map-mobile-btn-block">
-                            <img class="contacts__map-mobile-bg-image" src="../img/map-placeholder.jpg" alt="map">
-                            <button class="button" type="button">Посмотреть на карте</button>
+                        <div class="js-map-wrapper">
+                            <div class="contacts__map-mobile-btn-block">
+                                <img class="contacts__map-mobile-bg-image" src="../img/map-placeholder.jpg" alt="map">
+                                <button class="button js-open-map" type="button">Посмотреть на карте</button>
+                            </div>
+                            <div class="contacts__map-wrapper">
+                                <button class="contacts__map-wrapper-close js-close-map" type="button">
+                                    <span class="icon-close"></span>
+                                </button>
+                                <div class="contacts__map js-init-map" data-image="../img/map-marker.svg" data-initial-longitude="55.874062" data-initial-latitude="49.220554" data-initial-zoom="14"></div>
+                            </div>
                         </div>
-                        <div class="contacts__map js-init-map"></div>
                     </div>
                 </div>
             </section>
