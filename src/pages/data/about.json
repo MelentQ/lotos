@@ -1,0 +1,64 @@
+{
+    "title": "О компании",
+    "isBlack": true,
+    "cards1": {
+        "text": "<h2>О нас в цифрах</h2>",
+        "items": [
+            {
+                "image": "img/cards/card-5.jpg",
+                "title": "2014 год",
+                "text": "год основания компании"
+            },
+            {
+                "image": "img/cards/card-6.jpg",
+                "title": "более 20",
+                "text": "партнеров по всей России"
+            },
+            {
+                "image": "img/cards/card-7.jpg",
+                "title": "более 50",
+                "text": "сотрудников в штате"
+            },
+            {
+                "image": "img/cards/card-8.jpg",
+                "title": "24/7",
+                "text": "бесплатная доставка в любую точку страны"
+            },
+            {
+                "image": "img/cards/card-9.jpg",
+                "title": "более 4 млн.",
+                "text": "ед. продукции - наш годовой оборот"
+            },
+            {
+                "image": "img/cards/card-10.jpg",
+                "title": "33 города",
+                "text": "наша география продаж"
+            }
+        ]
+    },
+    "cards2": {
+        "text": "<h2>Собственная производственная база</h2><p>Производственные мощности компании LOTOS позволяют ежегодно выпускать:</p>",
+        "items": [
+            {
+                "image": "img/cards/card-11.jpg",
+                "title": "> 600 000 шт ",
+                "text": "комплектов ковров"
+            },
+            {
+                "image": "img/cards/card-12.jpg",
+                "title": "> 600 000 шт",
+                "text": "защит картера"
+            },
+            {
+                "image": "img/cards/card-13.jpg",
+                "title": "1 000 000 шт",
+                "text": "защитных сеток в бампер"
+            },
+            {
+                "image": "img/cards/card-14.jpg",
+                "title": "2 000 000 л",
+                "text": "антикоррозийных материалов"
+            }
+        ]
+    }
+}

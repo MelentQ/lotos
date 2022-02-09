@@ -1,0 +1,30 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<div class="js-first-block"></div>
+
+<ul class="breadcrumbs container2">
+  <li>
+    <a href="#">Главная</a>
+  </li>
+  <li>
+    <a href="#">О компании</a>
+  </li>
+</ul>
+
+<section class="intro-title">
+  <div class="container2">
+    <h1 class="intro-title__title">О компании</h1>
+  </div>
+</section>
+
+{{>intro-accent}}
+
+{{>cards data=cards1}}
+
+{{>features}}
+
+{{>cards data=cards2}}
+
+{{/content}}
+{{/extend}}

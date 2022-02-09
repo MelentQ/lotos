@@ -1,0 +1,38 @@
+.intro-accent {
+
+  padding-bottom: 14rem;
+  padding-top: 8rem;
+
+  @include breakpoint(tablet) {
+    padding-bottom: 8rem;
+    padding-top: 4rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__text-block {
+    grid-column: span 2;
+
+    h2 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+  }
+
+  &__accent-block {
+    height: fit-content;
+    padding: 3rem;
+
+    border-radius: 1.6rem;
+    border: 1px solid var(--primary-color);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}

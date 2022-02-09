@@ -84,6 +84,46 @@
     object-fit: cover;
   }
 
+  &__map-wrapper {
+    @include breakpoint(small-tablet) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition: opacity 0.3s ease, transition 0.3s ease;
+
+      width: 100%;
+      height: 100%;
+
+      padding: 6rem 2.5rem 4rem;
+
+      background-color: #151515;
+    }
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__map-wrapper-close {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+
+    display: none;
+
+    color: var(--primary-color);
+
+    @include breakpoint(small-tablet) {
+      display: block;
+    }
+  }
+
   &__map {
     height: 48rem;
 
@@ -92,11 +132,30 @@
     overflow: hidden;
 
     @include breakpoint(small-tablet) {
-      display: none;
+      width: 100%;
+      height: 100%;
     }
 
     [class*="ymaps-2"][class*="-ground-pane"] {
       filter: grayscale(100%);
+    }
+
+    .placemark {
+      width: 25rem;
+    }
+
+    .placemark__image {
+      width: 3.6rem;
+      height: 3.6rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .placemark__label {
+      display: block;
+      margin-left: 3.5rem;
+
+      color: white;
+      @extend %fs-t3;
     }
   }
 
@@ -104,7 +163,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 502;
+    z-index: 602;
 
     width: 100%;
     height: 100%;

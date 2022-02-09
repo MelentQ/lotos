@@ -7,7 +7,7 @@
       </div>
       <ul class="cards__list">
         {{#each data.items}}
-        <li class="cards__list-item">
+        <li class="cards__list-item" data-feature-anim-scale>
           <img src="{{this.image}}" alt="{{this.title}}">
           <h3 class="cards__list-item-title">{{this.title}}</h3>
           <span class="cards__list-item-text">{{this.text}}</span>
