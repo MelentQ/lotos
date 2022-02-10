@@ -2,7 +2,7 @@
     "title": "О компании",
     "isBlack": true,
     "cards1": {
-        "text": "<h2>О нас в цифрах</h2>",
+        "text": "<h3>О нас в цифрах</h3>",
         "items": [
             {
                 "image": "img/cards/card-5.jpg",
@@ -37,7 +37,7 @@
         ]
     },
     "cards2": {
-        "text": "<h2>Собственная производственная база</h2><p>Производственные мощности компании LOTOS позволяют ежегодно выпускать:</p>",
+        "text": "<h3>Собственная производственная база</h3><p>Производственные мощности компании LOTOS позволяют ежегодно выпускать:</p>",
         "items": [
             {
                 "image": "img/cards/card-11.jpg",
@@ -60,5 +60,68 @@
                 "text": "антикоррозийных материалов"
             }
         ]
-    }
+    },
+    "certificates": [
+        {
+            "image": "img/certificates/1.jpg",
+            "imageFull": "img/certificates/3-full.jpg",
+            "name": "Свидетельство о государственной регистрации продукции"
+        },
+        {
+            "image": "img/certificates/2.jpg",
+            "imageFull": "img/certificates/3-full.jpg",
+            "name": "Сертификат менеджмента качества ГОСТ-Р ИСО 9001-2015 (ISO 9001:2015)"
+        },
+        {
+            "image": "img/certificates/3.jpg",
+            "imageFull": "img/certificates/3-full.jpg",
+            "name": "Сертификат соответствия LOTOS Ceramic"
+        },
+        {
+            "image": "img/certificates/1.jpg",
+            "imageFull": "img/certificates/3-full.jpg",
+            "name": "Свидетельство о государственной регистрации продукции"
+        },
+        {
+            "image": "img/certificates/2.jpg",
+            "imageFull": "img/certificates/3-full.jpg",
+            "name": "Сертификат менеджмента качества ГОСТ-Р ИСО 9001-2015 (ISO 9001:2015)"
+        },
+        {
+            "image": "img/certificates/3.jpg",
+            "imageFull": "img/certificates/3-full.jpg",
+            "name": "Сертификат соответствия LOTOS Ceramic"
+        }
+    ],
+    "benefits": [
+        {
+            "icon": "#benefit-1",
+            "name": "высококачественные <br> материалы"
+        },
+        {
+            "icon": "#benefit-2",
+            "name": "персональный <br> менеджер"
+        },
+        {
+            "icon": "#benefit-3",
+            "name": "большой потенциал увеличения доходности"
+        },
+        {
+            "icon": "#benefit-4",
+            "name": "адаптированная бесплатная <br> реклама"
+        },
+        {
+            "icon": "#benefit-5",
+            "name": "обучение технологии <br> нанесения"
+        },
+        {
+            "icon": "#benefit-6",
+            "name": "бесплатные тренинги и контроль качества"
+        },
+        {
+            "icon": "#benefit-7",
+            "name": "бeсплатное оборудование"
+        }
+    ],
+    "formText": "<h3>Стать партнером</h3>Гибкая система сотрудничества и разнообразные варианты партнерства, сопровождение каждой сделки с закреплением для вас персонального менеджера."
 }

@@ -7,20 +7,37 @@
     padding-bottom: 8rem;
     padding-top: 4rem;
   }
+  @include breakpoint(small-tablet) {
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+  }
 
   &__inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+
+    @include breakpoint(small-tablet) {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+    }
   }
 
   &__text-block {
     grid-column: span 2;
 
+    @include breakpoint(small-tablet) {
+      grid-column: span 1;
+    }
+
     h2 {
       font-size: 50px;
       font-weight: 700;
       line-height: 1.1;
+
+      @include breakpoint(tablet) {
+        font-size: 32px;
+      }
     }
   }
 
@@ -31,8 +48,15 @@
     border-radius: 1.6rem;
     border: 1px solid var(--primary-color);
 
-    font-size: 16px;
+    @extend %fs-t3;
     font-weight: 500;
     line-height: 1.2;
+
+    @include breakpoint(tablet) {
+      padding: 2rem;
+    }
+    @include breakpoint(small-tablet) {
+      max-width: 32.5rem;
+    }
   }
 }

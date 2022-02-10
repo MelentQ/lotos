@@ -11,12 +11,9 @@
   &__text {
     margin-bottom: 3rem;
 
-    @include clamp(18, 20);
-    font-weight: 500;
-    line-height: 1.1;
-
-    h1, h2, h3, h4, h5, h6 {
-      @extend %fs-h3;
+    p {
+      font-weight: 500;
+      @extend %fs-t1;
     }
 
     @include breakpoint(mobile) {

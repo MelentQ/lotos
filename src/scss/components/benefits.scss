@@ -1,0 +1,59 @@
+.benefits {
+  padding: 6rem 0;
+
+  @include breakpoint(mobile) {
+    padding: 3rem 0;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+
+    @extend %fs-h3;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8rem;
+    row-gap: 4rem;
+
+    @include breakpoint(small-tablet) {
+      column-gap: 6rem;
+      row-gap: 3rem;
+    }
+    @include breakpoint(mobile) {
+      display: flex;
+      overflow: auto;
+
+      @include noScrollbar;
+    }
+  }
+
+  &__item {
+    @include breakpoint(mobile) {
+      flex-shrink: 0;
+
+      column-gap: 2rem;
+      row-gap: 0;
+
+      width: 24rem;
+    }
+
+    svg {
+      width: 5.6rem;
+      height: 5.6rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__name {
+    @extend %fs-t3;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+}

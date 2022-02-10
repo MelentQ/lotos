@@ -1,0 +1,35 @@
+<section class="certificates">
+  <div class="container2">
+    <div class="certificates__inner">
+      <div class="editable-text-container certificates__text">
+        <h3>Сертификаты</h3>
+        <p>Международные сертификаты. Продукция соответствует всем нормам и имеет необходимые удостоверения и сертификаты соответствия.</p>
+      </div>
+      <div class="certificates__slider-wrapper">
+        <div class="certificates__slider-btns">
+          <button class="certificates__slider-btn js-prev" type="button" title="Назад">
+            <svg><use xlink:href="#arr-left"></svg>
+          </button>
+          <button class="certificates__slider-btn js-next" type="button" title="Вперёд">
+            <svg><use xlink:href="#arr-right"></svg>
+          </button>
+        </div>
+        <div class="swiper certificates__slider js-init-slider" data-delay="4000" data-slides="3" data-space="80" data-navs=".certificates__slider-btns">
+          <ul class="swiper-wrapper certificates__slider-wrapper">
+            {{#each certificates}}
+            <li class="swiper-slide certificates__slide" data-feature-anim-scale data-src="{{this.imageFull}}" data-fancybox="gallery">
+              <div class="certificate">
+                <div class="certificate__image">
+                  <div class="certificate__bg"></div>
+                  <img src="{{this.image}}" alt="{{this.name}}">
+                </div>
+                <h3 class="certificate__name">{{this.name}}</h3>
+              </div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

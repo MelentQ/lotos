@@ -1,4 +1,5 @@
 {
     "title": "Контакты",
-    "isBlack": true
+    "isBlack": true,
+    "formText": "<h3>Связаться с нами</h3>"
 }

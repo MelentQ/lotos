@@ -63,41 +63,7 @@
   </div>
 </section>
 
-<section class="contacts-form">
-  <div class="container2">
-    <div class="contacts-form__inner">
-      <h2 class="contacts-form__title">Связаться с нами</h2>
-      <form class="form js-validation" name="contact" data-need-validation>
-        <div class="form__grid-items">
-          <div class="form__item">
-            <input class="js-input" type="text" autocomplete="off" name="name" required
-              data-parsley-errors-messages-disabled>
-            <p class="form__item--placeholder js-input-placeholder">Имя <span>*</span></p>
-          </div>
-          <div class="form__item">
-            <input class="js-input" type="text" autocomplete="off" name="company">
-            <p class="form__item--placeholder js-input-placeholder">Наименование компании</p>
-          </div>
-          <div class="form__item">
-            <input class="js-input" type="text" autocomplete="off" name="city">
-            <p class="form__item--placeholder js-input-placeholder">Город</p>
-          </div>
-          <div class="form__item">
-            <input class="js-input js-phone-input" autocomplete="off" type="tel" name="phone" required
-              data-parsley-errors-messages-disabled>
-            <p class="form__item--placeholder js-phone-input-label js-input-placeholder">Номер телефона <span>*</span></p>
-          </div>
-          <div class="form__item checkbox">
-            <input type="checkbox" required name="agree" id="agree">
-            <label for="agree">Оставляя заявку вы соглашаетесь с политикой обработки <a href="#">персональных
-                данных</a></label>
-          </div>
-          <button class="form__button" type="submit">Отправить</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
+{{>contacts-form formText=formText}}
 
 {{/content}}
 {{/extend}}

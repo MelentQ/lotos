@@ -1,0 +1,15 @@
+<section class="benefits">
+  <div class="container2">
+    <div class="benefits__inner">
+      <h2 class="benefits__title">Сотрудничество с Лотос это</h2>
+      <ul class="benefits__list">
+        {{#each benefits}}
+        <li class="benefits__item">
+          <svg><use xlink:href="{{this.icon}}"></svg>
+          <h3 class="benefits__name">{{{this.name}}}</h3>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>
