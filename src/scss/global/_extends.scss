@@ -1,7 +1,7 @@
 // Заголовки
 %fs-h1 {
   @include clamp(36, 64);
-  line-height: 1;
+  line-height: 1.1;
   font-weight: 700;
 }
 %fs-h2 {
@@ -15,32 +15,53 @@
   font-weight: 500;
 }
 %fs-h4 {
-  @include clamp(18, 22);
+  @include clamp(18, 24);
   line-height: 1.1;
   font-weight: 500;
 }
 
 // Наборный текст
 %fs-t1 {
-  @include clamp(17, 20);
+  @include clamp(14, 20);
+  line-height: 1.2;
+  font-weight: 500;
 }
 %fs-t2 {
-  @include clamp(15, 18);
+  @include clamp(14, 16);
+  line-height: 1.2;
+  font-weight: 500;
 }
 %fs-t3 {
   @include clamp(13, 16);
+  line-height: 1.4;
+  font-weight: 400;
 }
 %fs-t4 {
-  @include clamp(12, 15);
+  @include clamp(14, 15);
+  line-height: 1.1;
+  font-weight: 400;
 }
 %fs-t5 {
-  @include clamp(11, 14);
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
 }
 %fs-t6 {
-  @include clamp(10, 13);
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 300;
 }
 
-// Подписи
-%fs-s1 {
-  @include clamp(9, 12);
+// Кнопки
+%fs-b1 {
+  @include clamp(20, 24);
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+%fs-b2 {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
 }

@@ -56,25 +56,25 @@
     }
   }
   &__products {
-    color: $white !important;
     display: flex;
     align-items: center;
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 500;
+
+    padding: 8px 17px;
+
     border: 1px solid $white;
     border-radius: 20px;
-    padding: 8px 17px;
+    
+    @extend %fs-b2;
+    color: $white !important;
+    
     transition: color 0.3s ease, border-color 0.3s ease;
+
     &:hover {
       color: $accent !important;
       border-color: $accent;
       .header__products__burger span {
         background-color: $accent;
       }
-    }
-    @include breakpoint(laptop) {
-      font-size: 16px;
     }
 
     &__burger {
@@ -104,36 +104,27 @@
       }
     }
     a {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 1;
+      @extend %fs-b2;
+
       transition: color 0.3s ease;
+
       &:hover,
       &:focus {
         color: $accent;
-      }
-      @include breakpoint(laptop) {
-        font-size: 16px;
       }
     }
   }
   &__callback {
     display: flex;
     align-items: center;
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 700;
+    @extend %fs-b2;
     color: $accent !important;
     padding: 8px 17px;
     border-radius: 20px;
     border: 1px solid $accent;
     span {
       margin-left: 11px;
-      font-size: 16px;
-    }
-
-    @include breakpoint(laptop) {
-      font-size: 16px;
+      @extend %fs-t2;
     }
   }
   &__contact {
@@ -150,33 +141,23 @@
     }
   }
   &__phone {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1;
+    @extend %fs-b2;
 
     transition: color 0.3s ease;
 
     &:hover {
       color: $accent;
     }
-
-    @include breakpoint(laptop) {
-      font-size: 16px;
-    }
   }
   &__phone2 {
     display: none;
+    @extend %fs-b2;
+
+    margin-left: auto;
+      margin-right: 16px;
 
     @include breakpoint(tablet) {
-      display: block;
-      margin-left: auto;
-      margin-right: 16px;
-      font-size: 14px;
-      line-height: 1.3;
-      font-weight: bold;
-    }
-    @include breakpoint(small-mobile) {
-      font-size: 12px;
+      display: block
     }
   }
   &__products_text {

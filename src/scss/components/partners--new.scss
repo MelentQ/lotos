@@ -116,16 +116,12 @@
     border: 1px solid var(--primary-color);
     border-radius: 170px;
 
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.1;
+    @extend %fs-h4;
     text-transform: uppercase;
     color: var(--primary-color) !important;
 
     @include breakpoint(small-tablet) {
       min-height: 12rem;
-
-      font-size: 18px;
     }
 
     @include breakpoint(mobile) {

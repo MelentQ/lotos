@@ -23,7 +23,7 @@
     top: 42px;
     right: 42px;
     color: $white;
-    font-size: 18px;
+    @extend %fs-b2;
     cursor: pointer;
   }
 }

@@ -2,15 +2,14 @@
   display: inline-flex;
   align-items: center;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 1;
+  @extend %fs-t1;
   pointer-events: auto;
   color: #D8D8D8;
 }
 .go_next__icon_wrap {
   margin-left: 133px;
-  color: #40D0D5;
-  font-size: 18px;
+  color: var(--primary-color);
+  @extend %fs-b2;
   height: 20px;
   overflow: hidden;
 

@@ -1,42 +1,40 @@
 .catalogContainer {
-  margin-bottom: 44px;
+  margin-bottom: 4.4rem;
 }
 .catalogFilter {
-  margin-bottom: 64px;
+  margin-bottom: 6.4rem;
   @include breakpoint(mobile) {
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
   }
   &--title {
-    font-size: 13px;
-    line-height: 1.1;
-    margin-bottom: 11px;
+    @extend %fs-t6;
+    color: rgba(103, 103, 103, 1);
+    margin-bottom: 1.1rem;
   }
   &__categories {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -10px;
-    margin-bottom: -10px;
-    font-size: 16px;
-    @include breakpoint(mobile) {
-      font-size: 11px;
-    }
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+    @extend %fs-t2;
+
     @include breakpoint(small-mobile) {
       display: none;
     }
 
     li {
       position: relative;
-      margin-bottom: 10px;
-      margin-right: 10px;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
     }
     a {
-      padding: 11px 12px;
+      padding: 1.1rem 1.2rem;
       display: inline-block;
-      border-radius: 20px;
-      border: 1px solid rgba(34, 34, 34, 0.2);
+      border-radius: 2rem;
+      border: 0.1rem solid rgba(34, 34, 34, 0.2);
       &.active {
         color: $black;
-        border-width: 3px;
+        border-width: 0.3rem;
         border-color: $black;
       }
     }
@@ -54,24 +52,22 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
-      padding: 10px 22px 10px 28px;
+      gap: 1rem;
+      padding: 1rem 2.2rem 1rem 2.8rem;
       text-align: left;
-      border: 2px solid #222222;
-      border-radius: 60px;
+      border: 0.2rem solid #222222;
+      border-radius: 6rem;
     }
     &-btn-label {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.1;
+      @extend %fs-t5;
     }
     svg {
-      width: 14px;
-      height: 14px;
+      width: 1.4rem;
+      height: 1.4rem;
     }
     &-list {
       position: absolute;
-      top: calc(100% + 4px);
+      top: calc(100% + 0.4rem);
       left: 0;
       z-index: 2;
 
@@ -79,9 +75,9 @@
       flex-direction: column;
 
       width: 100%;
-      border: 2px solid #222222;
-      border-radius: 20px;
-      padding: 20px 0;
+      border: 0.2rem solid #222222;
+      border-radius: 2rem;
+      padding: 2rem 0;
 
       background-color: #f5f5f5;
 
@@ -95,14 +91,14 @@
         visibility: visible;
       }
       li {
-        border-bottom: 1px solid rgba(#222, 0.5);
+        border-bottom: 0.1rem solid rgba(#222, 0.5);
         &:last-of-type {
           border-bottom: none;
         }
       }
       a {
         display: block;
-        padding: 12px 22px 12px 28px;
+        padding: 1.2rem 2.2rem 1.2rem 2.8rem;
       }
     }
   }
@@ -110,19 +106,19 @@
 .catalog {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 80px;
-  row-gap: 74px;
-  margin-bottom: 40px;
+  column-gap: 8rem;
+  row-gap: 7.4rem;
+  margin-bottom: 4rem;
 
   @include breakpoint(small-tablet) {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
-    row-gap: 40px;
+    column-gap: 6rem;
+    row-gap: 4rem;
   }
   @include breakpoint(small-mobile) {
     grid-template-columns: 1fr;
-    column-gap: 30px;
-    row-gap: 30px;
+    column-gap: 3rem;
+    row-gap: 3rem;
     justify-items: center;
   }
 
@@ -138,30 +134,27 @@
   align-items: center;
   &__mobile-hidden {
     @include breakpoint(small-mobile) {
-      max-height: 126px;
+      max-height: 12.6rem;
       overflow: hidden;
       mask-image: linear-gradient(to top, transparent 0%, #000 28%);
       transition: max-height 0.1s linear;
     }
     &.active {
       mask-image: none;
-      max-height: 1000px;
+      max-height: 100rem;
       transition: max-height 0.5s linear;
     }
     &-button {
-      margin-top: 27px;
+      margin-top: 2.7rem;
       display: none;
       width: 100%;
-      border: 1px solid #40d0d5;
-      border-radius: 20px;
-      padding: 10px 20px;
+      border: 0.1rem solid #40d0d5;
+      border-radius: 2rem;
+      padding: 1rem 2rem;
       background: none;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1;
-      font-family: inherit;
+      @extend %fs-t2;
       text-transform: uppercase;
-      color: #40d0d5;
+      color: var(--primary-color);
       @include breakpoint(small-mobile) {
         display: block;
       }
@@ -171,72 +164,60 @@
     width: 100%;
   }
   &__title {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1;
-    margin-bottom: 20px;
+    @extend %fs-h4;
+    margin-bottom: 2rem;
   }
   &__desc {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 48px;
+    @extend %fs-t3;
+    margin-bottom: 4.8rem;
     @include breakpoint(small-mobile) {
-      font-size: 13px;
-      margin-bottom: 24px;
+      margin-bottom: 2.4rem;
     }
   }
   &__adv {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -20px;
-    margin-bottom: -20px;
+    margin-right: -2rem;
+    margin-bottom: -2rem;
     li {
-      margin-right: 20px;
-      margin-bottom: 20px;
-      width: calc(50% - 20px);
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      width: calc(50% - 2rem);
       display: flex;
       align-items: center;
       span {
-        font-size: 31px;
+        @extend %fs-h3;
         color: $accent;
-        margin-right: 20px;
-        @include breakpoint(small-mobile) {
-          font-size: 24px;
-        }
+        margin-right: 2rem;
       }
       p {
-        font-size: 16px;
-        line-height: 1.5;
-        @include breakpoint(small-mobile) {
-          font-size: 13px;
-          line-height: 1.2;
-        }
+        @extend %fs-t2;
       }
     }
   }
 }
 .catalogItem {
   position: relative;
-  padding-top: 57px;
-  min-height: 480px;
+  padding-top: 5.7rem;
+  min-height: 48rem;
   @include breakpoint(small-mobile) {
-    max-width: 325px;
+    max-width: 32.5rem;
   }
   &:before {
     content: "";
     display: block;
     width: 100%;
-    height: 480px;
+    height: 48rem;
     position: absolute;
     top: 0;
     left: 0;
     background-color: $white;
     z-index: -1;
-    border-radius: 220px;
+    border-radius: 22rem;
     transition: all 0.3s ease;
 
     @include breakpoint(small-mobile) {
-      max-width: 250px;
+      max-width: 25rem;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -244,8 +225,8 @@
   &:hover {
     &:before {
       width: 90%;
-      height: 432px;
-      top: 24px;
+      height: 43rem;
+      top: 2.4rem;
       left: 5%;
     }
     .catalogItem__img {
@@ -253,48 +234,41 @@
     }
   }
   &__img {
-    width: 250px;
-    width: calc(100% - 40px);
+    width: 25rem;
+    width: calc(100% - 4rem);
 
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 5.6rem;
     transition: all 0.3s ease;
 
     img {
       display: inline;
-      max-height: 250px;
+      max-height: 25rem;
       width: auto;
       object-fit: contain;
     }
   }
   &__button {
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 500;
-    padding: 10px 16px;
+    @extend %fs-b2;
+    padding: 1rem 1.6rem;
     color: $white;
-    font-family: Magistral;
     background-color: $accent;
-    border-radius: 30px;
+    border-radius: 3rem;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     display: inline-block;
   }
   &__name {
-    font-size: 20px;
-    line-height: 1.25;
-    @include breakpoint(small-mobile) {
-      font-size: 17px;
-    }
+    @extend %fs-t1;
   }
 }
 .catalog-new {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 60px;
-  row-gap: 35px;
-  margin-bottom: 80px;
+  column-gap: 6rem;
+  row-gap: 3.5rem;
+  margin-bottom: 8rem;
   margin-right: 0;
 
   @include breakpoint(small-tablet) {
@@ -309,44 +283,44 @@
     align-items: flex-start;
     justify-content: flex-end;
 
-    min-height: 285px;
+    min-height: 28.5rem;
     width: 100%;
     margin: 0;
     padding-top: 0;
 
     &:nth-of-type(1) {
       img {
-        width: 145px;
+        width: 14.5rem;
         height: auto;
         @include breakpoint(small-mobile) {
-          width: 116px;
+          width: 11.6rem;
         }
       }
     }
     &:nth-of-type(2) {
       img {
-        width: 236px;
+        width: 23.6rem;
         height: auto;
         @include breakpoint(small-mobile) {
-          width: 189px;
+          width: 19rem;
         }
       }
     }
     &:nth-of-type(3) {
       img {
-        width: 135px;
+        width: 13.5rem;
         height: auto;
         @include breakpoint(small-mobile) {
-          width: 108px;
+          width: 10.8rem;
         }
       }
     }
     &:nth-of-type(4) {
       img {
-        width: 291px;
+        width: 29rem;
         height: auto;
         @include breakpoint(small-mobile) {
-          width: 232px;
+          width: 23rem;
         }
       }
     }
@@ -355,7 +329,7 @@
         transform: scale(1);
 
         img {
-          top: 20px;
+          top: 2rem;
           transition: top 0.5s ease;
         }
       }
@@ -375,11 +349,11 @@
       margin-bottom: 0;
 
       background: white;
-      border-radius: 300px;
+      border-radius: 30rem;
       overflow: hidden;
 
       @include breakpoint(small-mobile) {
-        max-height: 180px;
+        max-height: 18rem;
       }
 
       &::after {
@@ -399,8 +373,8 @@
       }
       img {
         position: absolute;
-        right: 67px;
-        top: 52px;
+        right: 6.7rem;
+        top: 5.2rem;
 
         width: 30%;
         height: auto;
@@ -410,23 +384,20 @@
         @include breakpoint(small-mobile) {
           right: 50%;
           transform: translateX(50%);
-          top: 30px;
+          top: 3rem;
         }
       }
     }
     &__name {
       position: relative;
       z-index: 2;
-      max-width: 300px;
-      font-size: 22px;
-      font-weight: 500;
-      line-height: 1.1;
+      max-width: 30rem;
+      @extend %fs-t1;
 
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
 
       @include breakpoint(small-mobile) {
-        font-size: 16px;
-        margin-bottom: 12px;
+        margin-bottom: 1.2rem;
       }
     }
     &__button {
@@ -436,22 +407,20 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      gap: 5px;
+      gap: 0.5rem;
 
       margin-bottom: 0;
 
       background-color: rgba(0,0,0,0);
-      padding: 10px 16px;
+      padding: 1rem 1.6rem;
       color: $accent;
-      border: 1px solid #40D0D5;
-      border-radius: 20px;
+      border: 0.1rem solid var(--primary-color);
+      border-radius: 2rem;
 
-      font-size: 18px;
-      line-height: 1;
-      font-weight: 500;
+      @extend %fs-b2;
 
       svg {
-        margin-bottom: 2px;
+        margin-bottom: 0.2rem;
       }
     }
   }

@@ -13,6 +13,8 @@
 * [Каталог (раздел)](https://melentq.github.io/lotos/catalog-item)
 * [Каталог (детально)](https://melentq.github.io/lotos/item)
 * [Партнёрам](https://melentq.github.io/lotos/partners)
+* [Контакты](https://melentq.github.io/lotos/contacts)
+* [О компании](https://melentq.github.io/lotos/about)
 
 # Handlebars Boilerplate
 

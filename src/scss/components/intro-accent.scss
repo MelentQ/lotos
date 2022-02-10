@@ -31,13 +31,7 @@
     }
 
     h2 {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 1.1;
-
-      @include breakpoint(tablet) {
-        font-size: 32px;
-      }
+      @extend %fs-h2;
     }
   }
 

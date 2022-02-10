@@ -5,8 +5,7 @@
   margin-bottom: 109px;
   display: flex;
   align-items: flex-start;
-  font-size: 16px;
-  line-height: 1.5;
+  @extend %fs-t3;
   @include breakpoint(small-tablet) {
     flex-direction: column;
     margin-bottom: 80px;
@@ -32,12 +31,7 @@
     }
   }
   &__text {
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 400;
-    @include breakpoint(mobile) {
-      font-size: 16px;
-    }
+    @extend %fs-t1;
   }
   &__img {
     padding: 115px 20px;
@@ -59,15 +53,12 @@
     border-radius: 120px;
     padding: 37px 103px 37px 58px;
     color: $white;
-    font-size: 24px;
-    line-height: 1.1;
-    font-weight: 400;
+    @extend %fs-b1;
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
     transition: all 0.3s linear;
     @include breakpoint(mobile) {
-      font-size: 20px;
       padding: 25px 0;
       padding-right: 20px;
     }
@@ -108,7 +99,7 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       position: absolute;
-      font-size: 25px;
+      @extend %fs-b1;
       right: 58px;
       top: 50%;
       transform: translateY(-50%);
@@ -124,12 +115,9 @@
     }
   }
   &__title {
-    font-size: 26px;
-    line-height: 1;
-    font-weight: 700;
+    @extend %fs-h4;
     margin-bottom: 30px;
     @include breakpoint(mobile) {
-      font-size: 20px;
       margin-bottom: 20px;
     }
   }
@@ -139,9 +127,6 @@
     @include breakpoint(small-tablet) {
       flex-direction: column;
       gap: 30px;
-    }
-    @include breakpoint(mobile) {
-      font-size: 14px;
     }
     & > div {
       margin-right: 40px;
@@ -155,13 +140,10 @@
       }
     }
     &__icon {
-      font-size: 50px;
+      @extend %fs-h2;
       padding: 3px;
       color: $accent;
       margin-right: 20px;
-      @include breakpoint(small-tablet) {
-        font-size: 35px;
-      }
     }
     &__content {
       width: calc(100% - 76px);
@@ -196,16 +178,13 @@
       }
     }
     &__num {
-      font-size: 32px;
-      line-height: 1.1;
+      @extend %fs-b1;
       position: relative;
       margin-bottom: 28px;
       display: inline-block;
-      font-family: Magistral;
       color: $accent;
       @include breakpoint(small-tablet) {
         margin-bottom: 0;
-        font-size: 24px;
         width: fit-content;
         height: fit-content;
       }
@@ -224,10 +203,6 @@
     }
     &__text {
       color: #222222;
-      font-weight: 400;
-      @include breakpoint(mobile) {
-        font-size: 14px;
-      }
     }
   }
   &__characteristic {
@@ -244,24 +219,17 @@
         padding: 15px 0;
       }
       & > div {
+        @extend %fs-t3;
         &:nth-child(1) {
           margin-right: 50px;
-          font-size: 16px;
-          line-height: 1.25;
           opacity: 0.6;
           @include breakpoint(mobile) {
-            font-size: 14px;
             margin-right: 0;
             margin-bottom: 4px;
           }
         }
         &:nth-child(2) {
-          font-size: 16px;
-          line-height: 1.25;
           text-align: right;
-          @include breakpoint(mobile) {
-            font-size: 14px;
-          }
         }
       }
     }

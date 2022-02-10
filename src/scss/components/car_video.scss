@@ -1,18 +1,18 @@
 .car_video {
   position: fixed;
-  top: -7px;
-  right: -360px;
-  width: 1680px;
-  height: 1050px;
+  top: -0.7rem;
+  right: -36rem;
+  width: 168rem;
+  height: 105rem;
   transition: transform .1s linear, opacity .3s linear .3s;
   z-index: -1;
   opacity: 0;
 
   @include breakpoint(tablet) {
-    width: 1100px;
-    height: 687px;
-    top: 6px;
-    right: -420px;
+    width: 110rem;
+    height: 68rem;
+    top: 0.6rem;
+    right: -42rem;
   }
   svg {
     position: absolute;
@@ -29,8 +29,8 @@
     mask: url("#cursorMask");
 
     @include breakpoint(tablet) {
-      width: 1100px;
-      height: 687px;
+      width: 110rem;
+      height: 68rem;
     }
   }
   &.loaded {
@@ -57,8 +57,8 @@
   transition: opacity .2s ease;
   z-index: 1;
   opacity: 0.5;
-  width: 65px;
-  height: 64px;
+  width: 6.4rem;
+  height: 6.4rem;
   @include breakpoint(tablet) {
     display: none;
   }
@@ -78,45 +78,43 @@
     }
   }
   svg {
-    width: 65px;
-    height: 64px;
+    width: 6.4rem;
+    height: 6.4rem;
   }
 }
 .car_video__mark--materials {
-  top: 429px;
-  right: 746px;
+  top: 43rem;
+  right: 74.6rem;
 }
 .car_video__mark_content {
   position: absolute;
-  left: -47px;
+  left: -4.7rem;
   top: 100%;
   display: flex;
   align-items: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity .2s ease, transform .2s ease;
-  width: 309px;
-  padding-top: 35px;
-  transform: translate(0, 20px);
+  width: 31rem;
+  padding-top: 3.5rem;
+  transform: translate(0, 2rem);
 }
 .car_video__mark_icon {
-  margin-right: 15px;
-  width: 64px;
-  height: 64px;
+  margin-right: 1.5rem;
+  width: 6.4rem;
+  height: 6.4rem;
   flex-shrink: 0;
   svg {
     display: block;
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 6.4rem;
+    max-height: 6.4rem;
   }
 }
 .car_video__mark_title {
   position: relative;
-  font-size: 16px;
-  line-height: 1.1;
-  font-weight: bold;
+  @extend %fs-t2;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   &:last-child {
     margin-bottom: 0;
   }
@@ -132,8 +130,6 @@
   background-color: red;
 }
 .car_video__mark_link {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.1;
+  @extend %fs-t2;
   color: #40D0D5;
 }

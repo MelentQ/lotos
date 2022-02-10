@@ -34,7 +34,7 @@
 }
 .product_feature__icon {
   margin-right: 30px;
-  font-size: 130px;
+  @extend %fs-t6;
   svg {
     display: block;
   }
@@ -43,9 +43,7 @@
   }
 }
 .product_feature__text {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1;
+  @extend %fs-h4;
   max-width: 485px;
   transition: color .4s ease;
 }
@@ -99,20 +97,13 @@
     position: relative;
     top: -70px;
 
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.1;
+    @extend %fs-h4;
     color: white;
 
     transition: color 0.3s ease;
 
-    @include breakpoint(tablet) {
-      font-size: 20px;
-    }
-
     @include breakpoint(mobile) {
       top: -50px;
-      font-size: 18px;
     }
   }
 }
@@ -126,10 +117,6 @@
       width: 72px;
       height: 72px;
     }
-  }
-  .product_feature__text {
-    font-size: 13px;
-    line-height: 1.2;
   }
   .product_features__item {
     margin-bottom: 1px;

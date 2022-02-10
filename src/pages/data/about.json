@@ -1,6 +1,16 @@
 {
     "title": "О компании",
     "isBlack": true,
+    "breadcrumbs": [
+        {
+            "link": "./index.html",
+            "name": "Главная"
+        },
+        {
+            "link": "./about.html",
+            "name": "О компании"
+        }
+    ],
     "cards1": {
         "text": "<h3>О нас в цифрах</h3>",
         "items": [

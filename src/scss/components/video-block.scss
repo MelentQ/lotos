@@ -46,8 +46,7 @@
 
     display: block;
 
-    font-size: 14px;
-    font-weight: 500;
+    @extend %fs-t5;
   }
 
   &__play-icon-wrapper {
