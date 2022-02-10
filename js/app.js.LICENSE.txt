@@ -1,19 +1,4 @@
 /*!
- * Datepicker for Bootstrap v1.9.0 (https://github.com/uxsolutions/bootstrap-datepicker)
- *
- * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
- */
-
-/*!
- * Fuse.js v3.4.6 - Lightweight fuzzy-search (http://fusejs.io)
- * 
- * Copyright (c) 2012-2017 Kirollos Risk (http://kiro.me)
- * All Rights Reserved. Apache Software License 2.0
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- */
-
-/*!
  * GSAP 3.9.1
  * https://greensock.com
  *
@@ -24,29 +9,11 @@
 */
 
 /*!
- * ScrollTrigger 3.9.1
- * https://greensock.com
- *
- * @license Copyright 2008-2021, GreenSock. All rights reserved.
- * Subject to the terms at https://greensock.com/standard-license or for
- * Club GreenSock members, the agreement issued with that membership.
- * @author: Jack Doyle, jack@greensock.com
-*/
-
-/*!
- * circletype 2.3.2
+ * circletype 2.3.0
  * A JavaScript library that lets you curve type on the web.
- * Copyright © 2014-2020 Peter Hrynkow
+ * Copyright © 2014-2018 Peter Hrynkow
  * Licensed MIT
  * https://github.com/peterhry/CircleType#readme
- */
-
-/*!
- * dist/inputmask
- * https://github.com/RobinHerbots/Inputmask
- * Copyright (c) 2010 - 2021 Robin Herbots
- * Licensed under the MIT license
- * Version: 5.0.7
  */
 
 /*!
@@ -55,28 +22,6 @@
  * Licensed under MIT
  */
 
-/*!
-* Parsley.js
-* Version 2.9.2 - built Tue, Dec 10th 2019, 6:18 pm
-* http://parsleyjs.org
-* Guillaume Potier - <guillaume@wisembly.com>
-* Marc-Andre Lafortune - <petroselinum@marc-andre.ca>
-* MIT Licensed
-*/
-
-/*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
-
 /*! For license information please see choices.min.js.LICENSE.txt */
 
-/*! choices.js v9.1.0 | © 2021 Josh Johnson | https://github.com/jshjohnson/Choices#readme */
-
 /*! lazysizes - v5.2.2 */
-
-/**
- * @license
- * Lodash <https://lodash.com/>
- * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
- * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
- * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- */
