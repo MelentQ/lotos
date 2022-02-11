@@ -129,8 +129,8 @@
                             <a href="./contacts.html" class="mob_menu__link">Контакты</a>
                         </div>
                     </div>
-                    <div class="mob_menu__button">Связаться<i class="icon-envelope"></i>
-                    </div>
+                    <button data-popup="contact" type="button" class="mob_menu__button header__callback">Связаться<span class="icon-envelope"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -168,8 +168,8 @@
                             <a href="tel:88435983100" class="header__phone">+7 843 598 31 00</a>
                         </div>
                         <div class="header__contact__item">
-                            <a href="#" class="header__callback">Связаться<span class="icon-envelope"></span>
-                            </a>
+                            <button data-popup="contact" type="button" class="header__callback">Связаться<span class="icon-envelope"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -327,7 +327,7 @@
                 </div>
             </div>
         </footer>
-        <div class="popup orderPopup js-form-wrapper" id="order">
+        <div class="popup orderPopup js-init-form" id="order">
             <div class="popup__scroll scrollbar">
                 <div class="container2 popupContainer js-form-block">
                     <p class="orderPopup__title h1">Напыляемая шумоизоляция LOTOS MULTIPLEX</p>
@@ -336,6 +336,104 @@
                             <div class="orderPopup__img">
                                 <img src="img/product.png" alt="">
                             </div>
+                        </div>
+                        <div class="orderPopup__right">
+                            <form class="form js-validation" name="order" data-need-validation>
+                                <div class="form__items">
+                                    <div class="form__item">
+                                        <input class="js-input" type="text" autocomplete="off" name="name" required data-parsley-errors-messages-disabled>
+                                        <p class="form__item--placeholder js-input-placeholder">Имя<span>*</span>
+                                        </p>
+                                    </div>
+                                    <div class="form__item">
+                                        <input class="js-input js-phone-input" autocomplete="off" type="tel" name="phone" required data-parsley-errors-messages-disabled>
+                                        <p class="form__item--placeholder js-phone-input-label js-input-placeholder">Номер телефона<span>*</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form__bottom">
+                                    <div class="form__item checkbox">
+                                        <input type="checkbox" required name="agree" id="agree">
+                                        <label for="agree">Оставляя заявку вы соглашаетесь с политикой обработки<a href="#">персональных данных</a>
+                                        </label>
+                                    </div>
+                                    <button class="form__button" type="submit">Заказать</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2 popupContainer form__success js-success-block">
+                    <img class="form__success-image" src="img/full.svg" alt="Success">
+                    <h3 class="form__success-title">Спасибо!</h3>
+                    <p class="form__success-subtitle">Ваша заявка уже у нас. Менеджер свяжется с вами в самое ближайшее время.</p>
+                    <a class="form__success-back-btn" href="/" class="button">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8.44697V6.55303H3.63636L8.8447 1.3447L7.5 1.90735e-06L0 7.5L7.5 15L8.8447 13.6553L3.63636 8.44697H15Z" fill="#40D0D5" />
+                        </svg>
+                        <span class="form__success-back-btn-label">НА ГЛАВНУЮ</span>
+                    </a>
+                </div>
+            </div>
+            <button class="popup__close" type="button">
+                <span class="icon-close"></span>
+            </button>
+        </div>
+        <div class="popup orderPopup js-init-form" id="partner">
+            <div class="popup__scroll scrollbar">
+                <div class="container2 popupContainer js-form-block">
+                    <div class="orderPopup__content">
+                        <div class="orderPopup__left">
+                            <p class="orderPopup__title h1">Стать партнёром</p>
+                        </div>
+                        <div class="orderPopup__right">
+                            <form class="form js-validation" name="order" data-need-validation>
+                                <div class="form__items">
+                                    <div class="form__item">
+                                        <input class="js-input" type="text" autocomplete="off" name="name" required data-parsley-errors-messages-disabled>
+                                        <p class="form__item--placeholder js-input-placeholder">Имя<span>*</span>
+                                        </p>
+                                    </div>
+                                    <div class="form__item">
+                                        <input class="js-input js-phone-input" autocomplete="off" type="tel" name="phone" required data-parsley-errors-messages-disabled>
+                                        <p class="form__item--placeholder js-phone-input-label js-input-placeholder">Номер телефона<span>*</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form__bottom">
+                                    <div class="form__item checkbox">
+                                        <input type="checkbox" required name="agree" id="agree">
+                                        <label for="agree">Оставляя заявку вы соглашаетесь с политикой обработки<a href="#">персональных данных</a>
+                                        </label>
+                                    </div>
+                                    <button class="form__button" type="submit">Заказать</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2 popupContainer form__success js-success-block">
+                    <img class="form__success-image" src="img/full.svg" alt="Success">
+                    <h3 class="form__success-title">Спасибо!</h3>
+                    <p class="form__success-subtitle">Ваша заявка уже у нас. Менеджер свяжется с вами в самое ближайшее время.</p>
+                    <a class="form__success-back-btn" href="/" class="button">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8.44697V6.55303H3.63636L8.8447 1.3447L7.5 1.90735e-06L0 7.5L7.5 15L8.8447 13.6553L3.63636 8.44697H15Z" fill="#40D0D5" />
+                        </svg>
+                        <span class="form__success-back-btn-label">НА ГЛАВНУЮ</span>
+                    </a>
+                </div>
+            </div>
+            <button class="popup__close" type="button">
+                <span class="icon-close"></span>
+            </button>
+        </div>
+        <div class="popup orderPopup js-init-form" id="contact">
+            <div class="popup__scroll scrollbar">
+                <div class="container2 popupContainer js-form-block">
+                    <div class="orderPopup__content">
+                        <div class="orderPopup__left">
+                            <p class="orderPopup__title h1">Связаться</p>
                         </div>
                         <div class="orderPopup__right">
                             <form class="form js-validation" name="order" data-need-validation>
