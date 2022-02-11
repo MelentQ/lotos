@@ -131,5 +131,5 @@
 }
 .car_video__mark_link {
   @extend %fs-t2;
-  color: #40D0D5;
+  color: var(--primary-color);
 }

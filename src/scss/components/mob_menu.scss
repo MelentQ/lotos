@@ -56,7 +56,7 @@
   border-bottom: 1px solid #151515;
   transition: background-color .3s;
   &.active {
-    background-color: #40D0D5;
+    background-color: var(--primary-color);
   }
 }
 .mob_menu__sublink {

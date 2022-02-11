@@ -241,8 +241,8 @@ function toggleProductOrderButton() {
   if (btnDesktop && btnMobile) {
       const toggleY = 400;
 
-      window.addEventListener('scroll', (toggleY) => {
-          check();
+      window.addEventListener('scroll', () => {
+          check(toggleY);
       }, false)
   }
 

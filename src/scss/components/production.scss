@@ -24,11 +24,11 @@
   &:hover {
     .product_feature__icon {
       path:nth-child(1) {
-        stroke: #40D0D5;
+        stroke: var(--primary-color);
       }
     }
     .product_feature__text {
-      color: #40D0D5;
+      color: var(--primary-color);
     }
   }
 }
@@ -65,7 +65,7 @@
     &:hover,
     &:focus {
       .production__item-name {
-        color: #40D0D5;
+        color: var(--primary-color);
       }
     }
   }
@@ -104,6 +104,7 @@
 
     @include breakpoint(mobile) {
       top: -50px;
+      font-size: 1.5rem;
     }
   }
 }

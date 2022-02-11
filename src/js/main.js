@@ -2,9 +2,9 @@
 import './build-in/lazyload';
 // import detectTouch from './build-in/detectTouch';
 // import setScrollbarWidth from './build-in/setScrollbarWidth';
-// import validation from './build-in/validation';
+import validation from './build-in/validation';
 // import customSelects from './build-in/customSelects';
-// import masks from './build-in/masks';
+import masks from './build-in/masks';
 // import fileUpload from './build-in/fileUpload';
 // import anchorLinks from './build-in/anchorLinks';
 // import mediaPlayer from './build-in/mediaPlayer';
@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // polyfills();
     // detectTouch();
     // setScrollbarWidth();
-    // validation();
+    validation();
     // customSelects();
-    // masks();
+    masks();
     // fileUpload();
     // anchorLinks();
     // accordions();

@@ -1,3 +1,24 @@
+body.blackPage .breadcrumbs {
+  li {
+    display: inline;
+    &:after {
+      color: rgba(103, 103, 103, 1);
+    }
+    &:last-child {
+      display: block;
+      a {
+        color: white !important;
+      }
+    }
+    a {
+      color: rgba(103, 103, 103, 1);
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
 .breadcrumbs {
   padding-bottom: 2rem;
   padding-top: 12rem;
@@ -32,16 +53,16 @@
       }
 
       a {
-        color: white !important;
+        color: $dark !important;
         pointer-events: none;
         cursor: default;
       }
     }
     a {
-      color: rgba(103, 103, 103, 1);
+      color: $dark;
       transition: color 0.3s ease;
       &:hover {
-        color: white;
+        color: $gray3;
       }
     }
   }

@@ -134,8 +134,8 @@
 
     background-color: rgba(0,0,0,0);
 
-    color: #40D0D5;
-    border: 1px solid #40D0D5;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 80px;
     @include breakpoint(mobile) {
       width: 100%;
