@@ -193,6 +193,12 @@ $(document).on("click", ".mob_menu__link", function(e) {
 });
 // Меню в мобилке END
 
+const mobOpenPopupBtn = document.querySelector('.mob_menu__button');
+mobOpenPopupBtn.addEventListener('click', () => {
+    $(".mob_menu").removeClass("active");
+    bodyScrollLock.enableBodyScroll($(".mob_menu")[0]);
+})
+
 function togglePseudoSelect() {
   const container = document.querySelector('.js-toggle-pseudo-select');
   if (container) {

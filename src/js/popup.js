@@ -15,8 +15,6 @@ $(document).ready(function () {
 		var popup = $("#"+popupId);
 		popup.addClass("active");
 		bodyScrollLock.disableBodyScroll(popup[0]);
-
-		handleForm(popupId)
 	});
 
 	// Закрытие попапа
@@ -42,16 +40,20 @@ $(document).ready(function () {
 	});
 });
 
-function handleForm(popupId) {
-	const popup = document.querySelector(`#${popupId}`);
-	const form = popup.querySelector('form');
-	if (!form) return;
+const formContainers = Array.from(document.querySelectorAll('.js-init-form'));
+formContainers.forEach(formContainer => {
+	handleForm(formContainer)
+})
+
+function handleForm(formContainer) {
+
+	const successBlock = formContainer.querySelector('.js-success-block');
+	const formBlock = formContainer.querySelector('.js-form-block');
+	
+	const form = formBlock.querySelector('form');
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
-		const wrapper = form.closest('.js-form-wrapper');
-		const successBlock = wrapper.querySelector('.js-success-block');
-		const formBlock = wrapper.querySelector('.js-form-block');
 		if (successBlock) {
 			successBlock.classList.add('visible');
 			formBlock.classList.add('hidden')

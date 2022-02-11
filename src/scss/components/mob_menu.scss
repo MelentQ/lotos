@@ -58,15 +58,45 @@
   &.active {
     background-color: var(--primary-color);
   }
+  &:hover {
+    background-color: var(--primary-color);
+  }
+
+  &:focus {
+    background-color: var(--primary-color);
+  }
 }
 .mob_menu__sublink {
   color: #DEDEDE;
   display: block;
-  margin-bottom: 16px;
-  @extend %fs-t5;
-  
+  @include clamp(16, 18);
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  margin-bottom: 2.4rem;
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+
+  &:focus-visible {
+    color: var(--primary-color);
+  }
+
   &:last-child {
     margin-bottom: 0;
+  }
+  
+  @include breakpoint(mobile) {
+    margin-bottom: 16px;
+
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: capitalize;
   }
 }
 .mob_menu__sublist {
