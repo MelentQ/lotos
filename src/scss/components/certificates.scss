@@ -73,6 +73,14 @@
 
   height: 100%;
 
+  cursor: pointer;
+
+  &:hover {
+    .certificate__bg {
+      transform: scale(0.9);
+    }
+  }
+
   &__bg {
     position: absolute;
     top: 0;
@@ -80,14 +88,12 @@
     z-index: 1;
 
     width: 100%;
-    height: calc(100% + 7rem);
+    height: 100%;
 
     border-radius: 22rem;
     background-color: #1C1C1C;
 
-    @include breakpoint(small-tablet) {
-      height: calc(100% + 2.4rem);
-    }
+    transition: transform 0.3s ease;
   }
 
   &__image {

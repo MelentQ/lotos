@@ -2,7 +2,7 @@
     class="footer {{#if isBlack}}{{else}}light{{/if}}">
     <div class="container footer__content">
         <div class="footer__head">
-            <a href="#" class="footer__logo">
+            <a href="./index.html" class="footer__logo">
             {{#if isBlack}}
             <img src="img/logo.png" alt="">
             {{else}}
@@ -28,13 +28,12 @@
             <span class="footer__link">Ул. Липатова 37, к.9, Казань</span>
             </div>
             <div class="footer__nav_col footer__nav_col--right">
-            <div class="designed_by">
-                Создание сайта <br>
-                {{#if isBlack}}
-                <img src="img/mv_logo.svg" alt="">
-                {{else}}
-                <img src="img/mv_logo_dark.svg" alt="">
-                {{/if}}
+            <div class="made-by">
+                Создание сайта
+                <a class="made-by__link" href="https://markweber.ru/" target="_blank">
+                    <span>Марк Вебер</span>
+                    <svg><use xlink:href="#made-by"></svg>
+                </a>
             </div>
             </div>
         </div>

@@ -53,9 +53,39 @@
   }
 
   &__contact-link {
+    position: relative;
+
     @extend %fs-t3;
     line-height: 1.2;
     color: var(--primary-color) !important;
+
+    &::after {
+      content: '';
+  
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  
+      width: 100%;
+      height: 1px;
+  
+      background-color: var(--primary-color);
+  
+      opacity: 0;
+  
+      transition: opacity 0.3s ease;
+    }
+  
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+    &:focus-visible {
+      &::after {
+        opacity: 1;
+      }
+    }
   }
 
   &__map-mobile-btn-block {

@@ -238,12 +238,14 @@ function toggleProductOrderButton() {
   const btnDesktop = document.querySelector('.productDetail__button--desktop');
   const btnMobile = document.querySelector('.productDetail__button--mobile');
 
-  if (btnDesktop && btnMobile) {
-      const toggleY = 400;
-
-      window.addEventListener('scroll', () => {
-          check(toggleY);
-      }, false)
+  if (document.documentElement.clientWidth < 640) {
+    if (btnDesktop && btnMobile) {
+        const toggleY = 400;
+  
+        window.addEventListener('scroll', () => {
+            check(toggleY);
+        }, false)
+    }
   }
 
   function check(toggleY) {

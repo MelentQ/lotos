@@ -5,6 +5,12 @@
   @extend %fs-t1;
   pointer-events: auto;
   color: #D8D8D8;
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--primary-color);
+  }
 }
 .go_next__icon_wrap {
   margin-left: 133px;

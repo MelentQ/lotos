@@ -98,7 +98,11 @@
     justify-content: flex-start;
     li {
       flex-shrink: 0;
-      margin-right: 35px;
+      margin-right: 3.5rem;
+
+      @include breakpoint(laptop) {
+        margin-right: 2rem;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -126,6 +130,17 @@
       margin-left: 11px;
       @extend %fs-t2;
     }
+
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      color: white !important;
+      background-color: var(--primary-color);
+    }
+    &:focus-visible {
+      color: white !important;
+      background-color: var(--primary-color);
+    }
   }
   &__contact {
     display: flex;
@@ -146,6 +161,9 @@
     transition: color 0.3s ease;
 
     &:hover {
+      color: $accent;
+    }
+    &:focus-visible {
       color: $accent;
     }
   }
@@ -206,6 +224,17 @@
           }
         }
       }
+    }
+  }
+}
+
+.header.light {
+  .header__phone {
+    &:hover {
+      color: $accent;
+    }
+    &:focus-visible {
+      color: $accent;
     }
   }
 }

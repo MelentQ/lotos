@@ -1,11 +1,10 @@
 .partners_section {
-  margin-bottom: 191px;
   .section_title {
     line-height: 1;
   }
 }
 .partners_section__head {
-  margin-bottom: 88px;
+  @extend %fs-h2;
 }
 .partners_section__list {
   margin-bottom: 20px;

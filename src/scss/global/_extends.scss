@@ -60,7 +60,7 @@
   text-transform: uppercase;
 }
 %fs-b2 {
-  font-size: 18px;
+  @include clamp(16, 18);
   line-height: 1;
   font-weight: 500;
   text-transform: uppercase;

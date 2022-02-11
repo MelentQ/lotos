@@ -2,17 +2,6 @@
   height: 100vh;
   min-height: 64.7rem;
   position: relative;
-  margin-top: 14.4rem;
-
-  @include breakpoint(laptop) {
-    margin-top: 10rem;
-  }
-  @include breakpoint(tablet) {
-    margin-top: 8rem;
-  }
-  @include breakpoint(small-tablet) {
-    margin-top: 6rem;
-  }
 }
 .bannerContainer.loaded {
   .banner__title {
@@ -53,6 +42,18 @@
   }
   &__content {
     max-width: 79rem;
+
+    margin-top: 14.4rem;
+
+    @include breakpoint(laptop) {
+      margin-top: 10rem;
+    }
+    @include breakpoint(tablet) {
+      margin-top: 8rem;
+    }
+    @include breakpoint(small-tablet) {
+      margin-top: 6rem;
+    }
   }
 }
 @include breakpoint(tablet) {

@@ -19,8 +19,8 @@
             {{#each certificates}}
             <li class="swiper-slide certificates__slide" data-feature-anim-scale data-src="{{this.imageFull}}" data-fancybox="gallery">
               <div class="certificate">
+                <div class="certificate__bg"></div>
                 <div class="certificate__image">
-                  <div class="certificate__bg"></div>
                   <img src="{{this.image}}" alt="{{this.name}}">
                 </div>
                 <h3 class="certificate__name">{{this.name}}</h3>
