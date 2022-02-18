@@ -70,12 +70,17 @@
     }
   }
 }
+
 span.footer__link {
-  color: $white;
+  color: #D8D8D8 !important;
+
+  &::after {
+    content: none;
+  }
 }
 .footer.light {
   span.footer__link {
-    color: $dark2;
+    color: $dark2 !important;
   }
 }
 .footer__content {
@@ -92,6 +97,12 @@ span.footer__link {
 .footer__logo {
   img {
     max-width: 100%;
+
+    @include breakpoint(mobile) {
+      width: 8.8rem;
+      height: auto;
+      object-fit: contain;
+    }
   }
 }
 

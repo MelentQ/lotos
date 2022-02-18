@@ -8,6 +8,10 @@
   line-height: 1;
   position: relative;
   z-index: 1;
+
+  @include breakpoint(mobile) {
+    max-width: 14rem;
+  }
 }
 .geography_section__map {
   position: absolute;

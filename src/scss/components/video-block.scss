@@ -19,6 +19,7 @@
 
     border: 3px solid var(--primary-color);
     border-radius: 2.4rem;
+    overflow: hidden;
 
     @include breakpoint(tablet) {
       height: 46rem;

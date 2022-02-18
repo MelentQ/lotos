@@ -76,3 +76,9 @@
     margin-top: 21.2rem;
   }
 }
+
+@include breakpoint(mobile) {
+  .banner__desc {
+    margin-top: 2.4rem;
+  }
+}

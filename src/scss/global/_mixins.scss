@@ -72,7 +72,7 @@
 
 @mixin customScrollbar {
     &::-webkit-scrollbar {
-        background-color: white;
+        background-color: #d8d8d8;
         width: 0.6rem;
     }
 

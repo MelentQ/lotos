@@ -17,7 +17,7 @@
 }
 .mob_menu__inner {
   padding-bottom: 50px;
-  color: $white;
+  color: #d8d8d8;
 }
 .mob_menu__head {
   display: flex;
@@ -93,7 +93,7 @@
   @include breakpoint(mobile) {
     margin-bottom: 16px;
 
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 1;
     font-weight: 500;
     text-transform: capitalize;

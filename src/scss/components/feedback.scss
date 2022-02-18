@@ -7,7 +7,7 @@
   border-radius: 162px;
   padding: 13px 0;
   color: var(--primary-color);
-  @extend %fs-h2;
+  font-size: 5rem;
   width: 630px;
   overflow: hidden;
   display: inline-block;
@@ -22,6 +22,10 @@
       margin-bottom: -12px;
     }
   }
+
+  @include breakpoint(small-tablet) {
+    font-size: 2.4rem;
+  }
 }
 .feedback_button__text {
   display: inline-block;
@@ -32,7 +36,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-392px, 0);
+    transform: translate(-32.2rem, 0);
   }
 }
 @keyframes buttonRuningLine2 {

@@ -13,6 +13,11 @@
 
   &__text {
     margin-bottom: 5rem;
+
+    p {
+      font-weight: 500;
+      @extend %fs-t1;
+    }
   }
 
   &__slider {
@@ -136,6 +141,8 @@
   &__name {
     position: relative;
     z-index: 2;
+
+    padding-bottom: 2rem;
 
     @extend %fs-t3;
     font-weight: 400;

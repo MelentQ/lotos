@@ -16,7 +16,7 @@ $(window).on("load", function() {
           carImage2.src = "img/auto/2.gif";
           carImage2.onload = function() {
               $(".car_video").prepend('<img src="img/auto/2.gif" alt="" class="car_video__second_image">')
-              $(".car_video>svg").html(($(".car_video svg").html())+'<image width="1680" height="1050" xlink:href="img/auto/1.gif" />');
+              $(".car_video>svg").html(($(".car_video svg").html())+'<image class="bg-car-img" width="1680" height="1050" xlink:href="img/auto/1.gif" />');
               $(".car_video").addClass("loaded")
               initCarAnimation();
           }
@@ -37,14 +37,15 @@ $(window).on("load", function() {
       var $hideCarVideo = $("[data-hide-car]");
       $(window).scroll(function() {
           var scrollTop = $(window).scrollTop();
+          console.log(scrollTop);
           if(window.matchMedia("(max-width: 1199px)")) {
               var xTranslate = scrollTop / 4;
-              if(xTranslate < 50) {
+              if(xTranslate < 800) {
                   $car.css("transform", "translate("+xTranslate+"px, 0px)");
               }
           } else {
               var xTranslate = scrollTop / 2;
-              if(xTranslate < 318) {
+              if(xTranslate < 800) {
                   $car.css("transform", "translate("+xTranslate+"px, 0px)");
               }
           }
@@ -272,3 +273,23 @@ document.addEventListener('DOMContentLoaded', function () {
   toggleShowText()
   toggleProductOrderButton()
 })
+
+window.addEventListener('load', function () {
+    fixPartners()
+});
+
+function fixPartners() {
+    if (document.documentElement.clientWidth > 767) return;
+
+    const container = document.querySelector('.partners__list');
+
+    if (!container) return;
+
+    const elems = Array.from(container.querySelectorAll('.partners__list-item'));
+
+    if (elems.length % 2 == 0) {
+        elems[elems.length -1].remove();
+    }
+
+    elems[Math.floor(elems.length % 2 == 0 ? elems.length / 2 : elems.length / 2 + 1)].style.marginLeft = elems[0].clientWidth / 2 + 'px';
+}

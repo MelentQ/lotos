@@ -11,7 +11,7 @@
   margin-bottom: 20px;
   opacity: 0.3;
   color: #D8D8D8;
-  @extend %fs-t1;
+  font-size: 2rem;
   pointer-events: auto;
   &:last-child {
     margin-bottom: 0;
@@ -35,6 +35,6 @@
 
   @include breakpoint(tablet) {
     margin-bottom: 0;
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }

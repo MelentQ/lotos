@@ -207,9 +207,14 @@
     li {
       margin-right: 2rem;
       margin-bottom: 2rem;
-      width: calc(50% - 2rem);
+      width: 35%;
       display: flex;
       align-items: center;
+
+      @include breakpoint(small-tablet) {
+        width: calc(50% - 2rem)
+      }
+
       span {
         @extend %fs-h3;
         color: $accent;
@@ -257,6 +262,12 @@
     .catalogItem__img {
       transform: scale(1.1);
     }
+
+    .catalogItem__button {
+      background-color: rgba(0,0,0,0);
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
   }
   &__img {
     width: 25rem;
@@ -277,12 +288,15 @@
   &__button {
     @extend %fs-b2;
     padding: 1rem 1.6rem;
-    color: $white;
+    color: white;
     background-color: $accent;
     border-radius: 3rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
     display: inline-block;
+    border: solid 1px var(--primary-color);
+
+    transition: color $base-transition-time $base-transition-easing, background-color $base-transition-time $base-transition-easing, border-color $base-transition-time $base-transition-easing;
   }
   &__name {
     @extend %fs-t1;
@@ -313,6 +327,10 @@
     width: 100%;
     margin: 0;
     padding-top: 0;
+
+    img {
+      max-height: unset;
+    }
 
     &:nth-of-type(1) {
       img {
@@ -363,7 +381,7 @@
       }
       .catalogItem__button {
         background-color: var(--primary-color);
-        color: white;
+        color: white !important;
       }
     }
     &::before {
@@ -380,7 +398,7 @@
 
       margin-bottom: 0;
 
-      background: white;
+      background: $white;
       border-radius: 30rem;
       overflow: hidden;
 

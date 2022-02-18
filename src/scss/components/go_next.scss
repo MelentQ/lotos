@@ -2,7 +2,10 @@
   display: inline-flex;
   align-items: center;
   font-weight: bold;
-  @extend %fs-t1;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
   pointer-events: auto;
   color: #D8D8D8;
 
@@ -10,6 +13,10 @@
 
   &:hover {
     color: var(--primary-color);
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
   }
 }
 .go_next__icon_wrap {

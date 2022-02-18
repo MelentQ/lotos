@@ -39,7 +39,7 @@
 }
 .car_video--filled {
   image {
-    opacity: .5;
+    opacity: 0;
   }
   circle {
     opacity: 0;
@@ -80,6 +80,8 @@
   svg {
     width: 6.4rem;
     height: 6.4rem;
+
+    fill: none;
   }
 }
 .car_video__mark--materials {
@@ -131,5 +133,6 @@
 }
 .car_video__mark_link {
   @extend %fs-t2;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
+  font-weight: 500;
 }

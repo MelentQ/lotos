@@ -187,12 +187,17 @@
       }
     }
     &__num {
-      @extend %fs-b1;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+
       position: relative;
       margin-bottom: 28px;
       display: inline-block;
       color: $accent;
-      @include breakpoint(small-tablet) {
+      @include breakpoint(tablet) {
+        font-size: 24px;
+
         margin-bottom: 0;
         width: fit-content;
         height: fit-content;
@@ -214,6 +219,11 @@
       color: #222222;
     }
   }
+
+  &__value {
+    flex-shrink: 0;
+  }
+  
   &__characteristic {
     border-top: 1px solid $gray2;
     & > li {

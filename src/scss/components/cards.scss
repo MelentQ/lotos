@@ -16,6 +16,12 @@
       @extend %fs-t1;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+      @include breakpoint(small-mobile) {
+        max-width: 30rem;
+      }
+    }
+
     @include breakpoint(mobile) {
       margin-bottom: 2rem;
     }

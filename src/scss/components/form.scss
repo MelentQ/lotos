@@ -146,12 +146,12 @@
 
     &:hover {
       background-color: var(--primary-color);
-      color: white;
+      color: #d8d8d8;
     }
 
     &:focus-visible {
       background-color: var(--primary-color);
-      color: white;
+      color: #d8d8d8;
     }
   }
   &__item.checkbox {
@@ -257,7 +257,7 @@
     color: #5E5E5E;
     max-width: 440px;
     a {
-      color: white;
+      color: #d8d8d8;
     }
     &:before {
       content: '';

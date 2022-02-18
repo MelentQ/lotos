@@ -5,8 +5,15 @@
   @include breakpoint(small-tablet) {
     padding-bottom: 3rem;
   }
+
+  @include breakpoint(mobile) {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
   
   &__text {
+    max-width: 80rem;
+
     @include clamp(16, 24);
     font-weight: 500;
     line-height: 1.1;

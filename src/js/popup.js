@@ -17,12 +17,27 @@ $(document).ready(function () {
 		bodyScrollLock.disableBodyScroll(popup[0]);
 	});
 
+	const successBlocks = Array.from(document.querySelectorAll('.js-success-block'));
+	const formBlocks = Array.from(document.querySelectorAll('.js-form-block'));
+	const forms = Array.from(document.querySelectorAll('.form'));
+
 	// Закрытие попапа
 	$(document).on("click", ".popup__close", function () {
 		var popup = $(this).closest(".popup");
 		var popupId = popup.attr("id");
 		popup.removeClass("active");
 		bodyScrollLock.enableBodyScroll(popup[0]);
+
+		// Закрываем все success-блоки форм
+		successBlocks.forEach(block => {
+			block.classList.remove('visible');
+		})
+		formBlocks.forEach(block => {
+			block.classList.remove('hidden');
+		})
+		forms.forEach(form => {
+			form.reset();
+		})
 	});
 
 	$(document).on("click", function (e) {
