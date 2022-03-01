@@ -8,12 +8,13 @@ $(window).on("load", function() {
   }
 
   // Car animation
-  if (document.querySelector('.car_video')) {
+  const videoContainer = document.querySelector('.car_video');
+  if (videoContainer) {
       var carImage = new Image();
-      carImage.src = "img/auto/1.gif";
+      carImage.src = videoContainer.dataset.src1;
       carImage.onload = function() {
           var carImage2 = new Image();
-          carImage2.src = "img/auto/2.gif";
+          carImage2.src = videoContainer.dataset.src2;
           carImage2.onload = function() {
               $(".car_video").prepend('<img src="img/auto/2.gif" alt="" class="car_video__second_image">')
               $(".car_video>svg").html(($(".car_video svg").html())+'<image class="bg-car-img" width="1680" height="1050" xlink:href="img/auto/1.gif" />');

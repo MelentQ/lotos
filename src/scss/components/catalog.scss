@@ -68,6 +68,7 @@
       display: block;
     }
     &-btn {
+      width: 100%;
       background-color: rgba(0,0,0,0);
       display: flex;
       align-items: center;
@@ -204,6 +205,18 @@
     flex-wrap: wrap;
     margin-right: -2rem;
     margin-bottom: -2rem;
+    svg {
+      flex-shrink: 0;
+  
+      width: 3.8rem;
+      height: 3.8rem;
+      fill: none;
+      margin-right: 2rem;
+      @include breakpoint(small-tablet) {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
     li {
       margin-right: 2rem;
       margin-bottom: 2rem;
@@ -299,6 +312,8 @@
     transition: color $base-transition-time $base-transition-easing, background-color $base-transition-time $base-transition-easing, border-color $base-transition-time $base-transition-easing;
   }
   &__name {
+    display: block;
+
     @extend %fs-t1;
     font-weight: 400;
   }

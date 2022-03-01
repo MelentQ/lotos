@@ -1,7 +1,8 @@
 .socials {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: fit-content;
 
   @include breakpoint(tablet) {
     flex-direction: row;
@@ -13,6 +14,11 @@
   color: #D8D8D8;
   font-size: 2rem;
   pointer-events: auto;
+
+  svg {
+    fill: #d8d8d8;
+  }
+
   &:last-child {
     margin-bottom: 0;
 
@@ -26,11 +32,19 @@
   &:hover {
     color: var(--primary-color);
     opacity: 0.8;
+
+    svg {
+      fill: var(--primary-color);
+    }
   }
 
   &:focus-visible {
     color: var(--primary-color);
     opacity: 0.8;
+
+    svg {
+      fill: var(--primary-color);
+    }
   }
 
   @include breakpoint(tablet) {

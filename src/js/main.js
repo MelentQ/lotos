@@ -39,6 +39,10 @@ import circleTyping from './custom/circleTyping';
 
 gsap.registerPlugin(ScrollTrigger);
 
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // polyfills();
     // detectTouch();

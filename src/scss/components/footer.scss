@@ -9,27 +9,30 @@
   }
 }
 .footer__nav {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+
   @include breakpoint(tablet) {
-    margin-bottom: -20px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+  }
+  @include breakpoint(mobile) {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
   }
 }
 .footer__nav_col {
-  width: 16.6%;
-  padding: 0 10px;
-  @include breakpoint(tablet) {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+
 }
 .footer__nav_col--right {
-  margin-left: auto;
+  grid-column: 6/7;
 
   @include breakpoint(tablet) {
-    margin-top: 26px;
+    grid-column: 3/4;
+  }
+  @include breakpoint(mobile) {
+    grid-column: unset;
   }
 }
 .footer__label {

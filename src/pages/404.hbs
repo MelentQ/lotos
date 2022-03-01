@@ -1,0 +1,20 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<div class="js-first-block"></div>
+<section class="error-page">
+  <div class="container">
+    <div class="error-page__inner">
+      <span class="error-page__code">404</span>
+      <div class="error-page__text-container">
+        <h1 class="error-page__title">Страница не найдена</h1>
+        <p class="error-page__subtitle">К сожалению, страница, которую вы запрашиваете, не существует или была удалена</p>
+        <a class="error-page__link" href="/">
+          <span>НА ГЛАВНУЮ</span>
+          <svg><use xlink:href="#arrow-right"></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{{/content}}
+{{/extend}}

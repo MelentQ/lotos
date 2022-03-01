@@ -59,6 +59,7 @@
   opacity: 0.5;
   width: 6.4rem;
   height: 6.4rem;
+  cursor: pointer;
   @include breakpoint(tablet) {
     display: none;
   }

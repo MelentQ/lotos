@@ -153,6 +153,18 @@
       padding: 3px;
       color: $accent;
       margin-right: 20px;
+
+      svg {
+        width: 5.4rem;
+        height: 5.4rem;
+    
+        fill: none;
+
+        @include breakpoint(small-tablet) {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
     }
     &__content {
       width: calc(100% - 76px);

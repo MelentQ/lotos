@@ -51,6 +51,15 @@
     }
   }
 
+  &__item-image {
+    width: auto;
+    height: 5.6rem;
+
+    margin-bottom: 1.2rem;
+
+    object-fit: contain;
+  }
+
   &__name {
     @extend %fs-t3;
     font-weight: 500;

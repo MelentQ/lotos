@@ -2,6 +2,10 @@
   .section_title {
     line-height: 1;
   }
+
+  @include breakpoint(mobile) {
+    margin-bottom: -1rem;
+  }
 }
 .partners_section__head {
   @extend %fs-h2;
@@ -72,7 +76,6 @@
 }
 @include breakpoint(tablet) {
   .partners_section__head {
-    margin-bottom: 40px;
     .section_title {
       line-height: 1;
     }
@@ -117,8 +120,5 @@
   .partners_list__button {
     min-height: unset;
     padding: 26px 10px;
-  }
-  .partners_section {
-    margin-bottom: 96px;
   }
 }
