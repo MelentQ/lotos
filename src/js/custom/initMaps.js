@@ -60,12 +60,9 @@ export default function initMaps() {
 
   function initMobileMap(map) {
     const wrapper = map.closest('.js-map-wrapper');
-    console.log(wrapper);
     const modalWrapper = wrapper.querySelector('.contacts__map-wrapper');
     const openBtn = wrapper.querySelector('.js-open-map');
     const closeBtn = wrapper.querySelector('.js-close-map');
-
-    console.log(openBtn);
 
     openBtn.addEventListener('click', () => {
       modalWrapper.classList.add('active');

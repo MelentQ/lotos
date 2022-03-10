@@ -74,6 +74,14 @@
 .partners_section__mobile {
   display: none;
 }
+.partners__button {
+  transition: color $base-transition-time $base-transition-easing, background-color $base-transition-time $base-transition-easing;
+
+  &:hover {
+    background-color: $accent;
+    color: white !important;
+  }
+}
 @include breakpoint(tablet) {
   .partners_section__head {
     .section_title {

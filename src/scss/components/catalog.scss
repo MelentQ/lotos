@@ -141,6 +141,10 @@
     column-gap: 3rem;
     row-gap: 3rem;
     justify-items: center;
+
+    & > * {
+      width: 100%;
+    }
   }
 
   .catalogInfo {
@@ -381,6 +385,9 @@
         right: 2rem;
         top: 6rem;
         @include breakpoint(small-mobile) {
+          right: 50%;
+          transform: translateX(50%);
+          top: 3rem;
           width: 23rem;
         }
       }

@@ -1,3 +1,12 @@
+@keyframes markRotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(3600deg);
+  }
+}
+
 .car_video {
   position: fixed;
   top: -0.7rem;
@@ -8,12 +17,48 @@
   z-index: -1;
   opacity: 0;
 
-  @include breakpoint(tablet) {
+  video {
+    mix-blend-mode: saturation;
+  }
+
+  @include breakpoint(small-tablet) {
     width: 110rem;
     height: 68rem;
     top: 0.6rem;
     right: -42rem;
   }
+
+  .circle-text-car {
+    position: absolute;
+    top: 52.38%;
+    left: 50.119%;
+
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+
+    animation-name: markRotation;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .circle-text-car-image {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    &.hidden .circle-text-car-image {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+
+    &.hide {
+      opacity: 0;
+    }
+
+    @include breakpoint(small-tablet) {
+      opacity: 0;
+    }
+  }
+
   svg {
     position: absolute;
     top: 0;
@@ -23,12 +68,21 @@
   }
   circle {
     opacity: 0.5;
+
+    transition: r 0.3s ease, cx linear, cy linear;
+
+    @include breakpoint(small-tablet) {
+      opacity: 0;
+    }
   }
-  image {
+  svg mask rect {
+    fill: rgba(255, 255, 255, 1);
+  }
+  svg g {
     transition: opacity .4s ease;
     mask: url("#cursorMask");
 
-    @include breakpoint(tablet) {
+    @include breakpoint(small-tablet) {
       width: 110rem;
       height: 68rem;
     }
@@ -38,7 +92,7 @@
   }
 }
 .car_video--filled {
-  image {
+  g {
     opacity: 0;
   }
   circle {
@@ -52,6 +106,15 @@
   width: 100%;
   height: auto;
 }
+.marks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - var(--sb-width));
+  height: 100vh;
+
+  overflow: hidden;
+}
 .car_video__mark {
   position: absolute;
   transition: opacity .2s ease;
@@ -60,7 +123,8 @@
   width: 6.4rem;
   height: 6.4rem;
   cursor: pointer;
-  @include breakpoint(tablet) {
+  font-family: "Magistral", "Arial", sans-serif;;
+  @include breakpoint(small-tablet) {
     display: none;
   }
   &.active {
@@ -86,8 +150,8 @@
   }
 }
 .car_video__mark--materials {
-  top: 43rem;
-  right: 74.6rem;
+  // top: 43rem;
+  // right: 74.6rem;
 }
 .car_video__mark_content {
   position: absolute;
@@ -104,13 +168,12 @@
 }
 .car_video__mark_icon {
   margin-right: 1.5rem;
-  width: 6.4rem;
-  height: 6.4rem;
   flex-shrink: 0;
-  svg {
+  img {
     display: block;
-    max-width: 6.4rem;
-    max-height: 6.4rem;
+    width: 6.4rem;
+    height: auto;
+    object-fit: contain;
   }
 }
 .car_video__mark_title {

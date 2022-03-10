@@ -17,7 +17,7 @@
         <div class="swiper certificates__slider js-init-slider" data-delay="4000" data-slides="3" data-space="80" data-navs=".certificates__slider-btns">
           <ul class="swiper-wrapper certificates__slider-wrapper">
             {{#each certificates}}
-            <li class="swiper-slide certificates__slide" data-feature-anim-scale data-src="{{this.imageFull}}" data-fancybox="gallery">
+            <li class="swiper-slide certificates__slide" data-feature-anim-scale>
               <div class="certificate">
                 <div class="certificate__bg"></div>
                 <div class="certificate__image">
@@ -29,6 +29,32 @@
             {{/each}}
           </ul>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-gallery">
+    <button class="custom-gallery__close" type="button"><span class="icon-close"></span></button>
+    <div class="custom-gallery__inner">
+      <div class="ghsot"></div>
+      <div class="swiper custom-gallery__full-image-slider">
+          <ul class="swiper-wrapper custom-gallery__full-image-slider-wrapper">
+            {{#each certificates}}
+            <li class="swiper-slide custom-gallery__full-image-slide">
+              <img src="{{this.image}}" alt="{{this.name}}">
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+
+      <div class="swiper custom-gallery__thumbs-slider">
+        <ul class="swiper-wrapper custom-gallery__thumbs-slider-wrapper">
+          {{#each certificates}}
+          <li class="swiper-slide custom-gallery__thumbs-slide">
+            <img src="{{this.image}}" alt="{{this.name}}">
+          </li>
+          {{/each}}
+        </ul>
       </div>
     </div>
   </div>

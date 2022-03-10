@@ -48,7 +48,7 @@ body.blackPage .breadcrumbs {
 
       margin-top: 1.1rem;
       
-      @extend %fs-h3;
+      @extend %fs-h2;
       &:after {
         content: "";
       }

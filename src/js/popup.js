@@ -15,6 +15,14 @@ $(document).ready(function () {
 		var popup = $("#"+popupId);
 		popup.addClass("active");
 		bodyScrollLock.disableBodyScroll(popup[0]);
+
+		document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape') {
+					popup.removeClass("active");
+					bodyScrollLock.enableBodyScroll(popup[0]);
+				}
+			}
+		);
 	});
 
 	const successBlocks = Array.from(document.querySelectorAll('.js-success-block'));

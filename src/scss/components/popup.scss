@@ -29,6 +29,10 @@
     color: #d8d8d8;
     @extend %fs-b2;
     cursor: pointer;
+
+    &:hover {
+      color: $accent !important;
+    }
   }
 }
 .popupContainer {

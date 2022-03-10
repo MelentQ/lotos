@@ -20,13 +20,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: "Magistral", "Arial", sans-serif;;
+    font-family: "Magistral", "Arial", sans-serif;
     color: var(--text-color);
 
     background-color: #F5F5F5;
     &.blackPage {
-        background-color: #141414;
-        color: #d8d8d8;
+        background-color: rgb(22 21 22);
+        color: white;
     }
 }
 

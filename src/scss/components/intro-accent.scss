@@ -24,6 +24,7 @@
   }
 
   &__text-block {
+    color: white;
     grid-column: span 2;
 
     @include breakpoint(small-tablet) {
@@ -36,6 +37,7 @@
   }
 
   &__accent-block {
+    color: white;
     height: fit-content;
     padding: 3rem;
 

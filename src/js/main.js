@@ -1,7 +1,7 @@
 // import polyfills from './build-in/polyfills';
 import './build-in/lazyload';
 // import detectTouch from './build-in/detectTouch';
-// import setScrollbarWidth from './build-in/setScrollbarWidth';
+import setScrollbarWidth from './build-in/setScrollbarWidth';
 import validation from './build-in/validation';
 // import customSelects from './build-in/customSelects';
 import masks from './build-in/masks';
@@ -11,8 +11,6 @@ import masks from './build-in/masks';
 // import datepicker from './build-in/datepicker';
 // import accordions from './build-in/accordions';
 // import modals from './build-in/modals';
-
-import {Fancybox} from "@fancyapps/ui";
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -36,6 +34,7 @@ import validateForms from './custom/formValidation';
 import initMaps from './custom/initMaps';
 import openVideoModals from './components/openVideoModals';
 import circleTyping from './custom/circleTyping';
+import initGallery from './custom/initGallery';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +45,7 @@ if (history.scrollRestoration) {
 document.addEventListener('DOMContentLoaded', function () {
     // polyfills();
     // detectTouch();
-    // setScrollbarWidth();
+    setScrollbarWidth();
     validation();
     // customSelects();
     masks();
@@ -66,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initMaps();
     openVideoModals();
     circleTyping();
+    initGallery();
 });
 
 document.addEventListener('lazyloaded', () => {

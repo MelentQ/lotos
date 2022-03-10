@@ -2,17 +2,40 @@
 {{#content "main"}}
 
 <div class="car_video" data-src1="img/auto/1.gif" data-src2="img/auto/2.gif">
-  <svg>
+
+  <svg height="100%" width="100%">
+    <foreignObject x="0" y="0" width="100%" height="100%">
+      <video class="car_video__second_image" xmlns="http://www.w3.org/1999/xhtml" width="1680" height="1050" preload="auto" no-controls autoplay loop playsinline muted>
+        <source src="img/auto/2.m4v" type="video/mp4" />
+      </video>
+    </foreignObject>
     <defs>
-      <mask id="cursorMask" maskUnits="objectBoundingBox" maskContentUtils="objectBoundingBox">
+      <mask id="cursorMask" x="0" y="0" width="100%" height="100%">
         <g>
-          <rect x="0" y="0" width="1680" height="1050" fill="#FFFFFF" />
-          <circle cx="0" cy="0" r="200" fill="#000000" />
+          <rect x="0" y="0" width="100%" height="100%"/>
+          <circle cx="842" cy="550" r="50" fill="#000000" />
         </g>
       </mask>
     </defs>
+    <g>
+      <foreignObject id="video-1" x="0" y="0" width="100%" height="100%">
+        <video class="bg-car-img" id="video-1" xmlns="http://www.w3.org/1999/xhtml" width="1680" height="1050" preload="auto" no-controls autoplay loop playsinline muted>
+          <source src="img/auto/1.m4v" type="video/mp4" />
+        </video>
+      </foreignObject>
+    </g>
   </svg>
-  <div class="car_video__mark car_video__mark--materials">
+
+  {{!-- <div class="circle-text-car js-circle-type" data-radius="65">ПОД ЗАЩИТОЙ LOTOS&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;ПОД ЗАЩИТОЙ LOTOS&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</div> --}}
+  <div class="circle-text-car">
+    <img class="circle-text-car-image" src="img/circleText.svg" alt="Text">
+  </div>
+</div>
+
+<div class="marks">
+  <a class="car_video__mark" href="#">
+    <span class="car_video_coord_right visually-hidden">170</span>
+    <span class="car_video_coord_top visually-hidden">665</span>
     <svg width="64" height="72" viewBox="0 0 64 72" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M32 4L59.7128 20V52L32 68L4.28719 52V20L32 4Z" stroke="white" stroke-width="2" />
       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -21,23 +44,71 @@
     </svg>
     <div class="car_video__mark_content">
       <div class="car_video__mark_icon">
-        <svg width="49" height="60" viewBox="0 0 49 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24H30V36H27V27H3V57H14.5V60H0V24Z" fill="white" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13H30V24L27 24V16H3V24L0 24V13Z" fill="white" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M19 35H49V60H19V35ZM22 38V57H46V38H22Z" fill="white" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2H23V14H20V5H10V14H7V2Z" fill="white" />
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M47.5 60H1.5V57H47.5V60Z" fill="white" />
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M34.1529 6.5302L43.4744 3.42302L42.5258 0.576965L29.0258 5.07697L29.0073 7.91674L40.5073 11.9167L41.4929 9.08325L34.1529 6.5302Z"
-            fill="white" />
-        </svg>
+        <img src="img/Защита картера.svg" alt="">
+      </div>
+      <div class="car_video__mark_text">
+        <div class="car_video__mark_title">Защита картера</div>
+        <span class="car_video__mark_link">Смотреть</span>
+      </div>
+    </div>
+  </a>
+  <a class="car_video__mark" href="#">
+    <span class="car_video_coord_right visually-hidden">528</span>
+    <span class="car_video_coord_top visually-hidden">598</span>
+    <svg width="64" height="72" viewBox="0 0 64 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 4L59.7128 20V52L32 68L4.28719 52V20L32 4Z" stroke="white" stroke-width="2" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M46.7222 27.5L31.9998 19L17.2773 27.5V44.5L31.9998 53L46.7222 44.5V27.5ZM33.4998 41V37.5H36.9998V34.5H33.4998V31H30.4998V34.5H26.9998V37.5H30.4998V41H33.4998Z"
+        fill="white" />
+    </svg>
+    <div class="car_video__mark_content">
+      <div class="car_video__mark_icon">
+        <img src="img/Коврик в салон.svg" alt="">
+      </div>
+      <div class="car_video__mark_text">
+        <div class="car_video__mark_title">Автомобильные ковры</div>
+        <span class="car_video__mark_link">Смотреть</span>
+      </div>
+    </div>
+  </a>
+  <a class="car_video__mark" href="#">
+    <span class="car_video_coord_right visually-hidden">96</span>
+    <span class="car_video_coord_top visually-hidden">398</span>
+    <svg width="64" height="72" viewBox="0 0 64 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 4L59.7128 20V52L32 68L4.28719 52V20L32 4Z" stroke="white" stroke-width="2" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M46.7222 27.5L31.9998 19L17.2773 27.5V44.5L31.9998 53L46.7222 44.5V27.5ZM33.4998 41V37.5H36.9998V34.5H33.4998V31H30.4998V34.5H26.9998V37.5H30.4998V41H33.4998Z"
+        fill="white" />
+    </svg>
+    <div class="car_video__mark_content">
+      <div class="car_video__mark_icon">
+        <img src="img/Керамика.svg" alt="">
+      </div>
+      <div class="car_video__mark_text">
+        <div class="car_video__mark_title">Керамика</div>
+        <span class="car_video__mark_link">Смотреть</span>
+      </div>
+    </div>
+  </a>
+  <a class="car_video__mark" href="#">
+    <span class="car_video_coord_right visually-hidden">370</span>
+    <span class="car_video_coord_top visually-hidden">470</span>
+    <svg width="64" height="72" viewBox="0 0 64 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 4L59.7128 20V52L32 68L4.28719 52V20L32 4Z" stroke="white" stroke-width="2" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M46.7222 27.5L31.9998 19L17.2773 27.5V44.5L31.9998 53L46.7222 44.5V27.5ZM33.4998 41V37.5H36.9998V34.5H33.4998V31H30.4998V34.5H26.9998V37.5H30.4998V41H33.4998Z"
+        fill="white" />
+    </svg>
+    <div class="car_video__mark_content">
+      <div class="car_video__mark_icon">
+        <img src="img/Антикоррозия.svg" alt="">
       </div>
       <div class="car_video__mark_text">
         <div class="car_video__mark_title">Антикоррозионные материалы</div>
-        <a href="#" class="car_video__mark_link">Смотреть</a>
+        <span class="car_video__mark_link">Смотреть</span>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 
 <!-- Банер -->
