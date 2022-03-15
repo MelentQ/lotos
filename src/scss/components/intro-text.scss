@@ -12,6 +12,7 @@
   }
   
   &__text {
+    color: #d8d8d8;
     max-width: 80rem;
 
     @include clamp(16, 24);

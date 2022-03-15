@@ -17,7 +17,7 @@
 }
 .mob_menu__inner {
   padding-bottom: 50px;
-  color: #d8d8d8;
+  color: white;
 }
 .mob_menu__head {
   display: flex;
@@ -67,7 +67,6 @@
   }
 }
 .mob_menu__sublink {
-  color: #DEDEDE;
   display: block;
   @include clamp(16, 18);
   line-height: 1;
@@ -77,6 +76,11 @@
   margin-bottom: 2.4rem;
 
   transition: color 0.3s ease;
+
+  &:link,
+  &:visited {
+    color: #DEDEDE;
+  }
 
   &:hover {
     color: var(--primary-color);

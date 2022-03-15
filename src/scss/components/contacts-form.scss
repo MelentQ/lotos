@@ -28,5 +28,9 @@
     @include breakpoint(small-tablet) {
       margin-bottom: 3.4rem;
     }
+
+    p {
+      color: #d8d8d8;
+    }
   }
 }

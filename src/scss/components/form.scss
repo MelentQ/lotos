@@ -49,6 +49,7 @@
     }
   }
   &__success-subtitle {
+    color: #d8d8d8;
     max-width: 780px;
     margin-bottom: 54px;
     @extend %fs-h4;
@@ -146,12 +147,12 @@
 
     &:hover {
       background-color: var(--primary-color);
-      color: #d8d8d8;
+      color: white;
     }
 
     &:focus-visible {
       background-color: var(--primary-color);
-      color: #d8d8d8;
+      color: white;
     }
   }
   &__item.checkbox {
@@ -257,7 +258,7 @@
     color: #5E5E5E;
     max-width: 440px;
     a {
-      color: #d8d8d8;
+      color: white;
     }
     &:before {
       content: '';

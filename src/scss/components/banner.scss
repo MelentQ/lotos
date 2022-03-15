@@ -3,6 +3,9 @@
   min-height: 64.7rem;
   position: relative;
 }
+.banner__desc {
+  color: #d8d8d8;
+}
 .bannerContainer.loaded {
   .banner__title {
     animation: slideUpSm 1.4s ease;

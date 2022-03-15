@@ -21,6 +21,7 @@
   }
 
   &__label {
+    color: #d8d8d8;
     display: block;
     margin-bottom: 0.1rem;
 
@@ -212,7 +213,7 @@
       display: block;
       margin-left: 3.5rem;
 
-      color: #d8d8d8;
+      color: white;
       @extend %fs-t3;
     }
   }

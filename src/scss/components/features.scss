@@ -25,6 +25,7 @@
 .features_section__text {
   @extend %fs-t5;
   p {
+    color: #d8d8d8;
     font-weight: 500;
     @extend %fs-t1;
 
@@ -110,12 +111,14 @@
   color: var(--primary-color);
   @extend %fs-h2;
   margin-bottom: 0.4rem;
+  font-weight: 500;
 
   @include breakpoint(tablet) {
     margin-bottom: 0.5rem;
   }
 }
 .feature__text {
+  color: #d8d8d8;
   position: relative;
   z-index: 2;
 

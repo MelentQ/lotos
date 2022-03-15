@@ -7,13 +7,13 @@ body.blackPage .breadcrumbs {
     &:last-child {
       display: block;
       a {
-        color: #d8d8d8 !important;
+        color: white !important;
       }
     }
     a {
       color: rgba(103, 103, 103, 1);
       &:hover {
-        color: #d8d8d8;
+        color: white;
       }
     }
   }

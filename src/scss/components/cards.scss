@@ -12,6 +12,7 @@
     margin-bottom: 3rem;
 
     p {
+      color: #d8d8d8;
       font-weight: 500;
       @extend %fs-t1;
     }
@@ -93,6 +94,7 @@
   }
 
   &__list-item-text {
+    color: #d8d8d8;
     position: relative;
     z-index: 3;
 

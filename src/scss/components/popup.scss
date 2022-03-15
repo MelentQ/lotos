@@ -6,7 +6,7 @@
   height: 100%;
   background-color: $dark;
   z-index: 100;
-  color: #d8d8d8;
+  color: white;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -26,7 +26,7 @@
     position: absolute;
     top: 42px;
     right: 42px;
-    color: #d8d8d8;
+    color: white;
     @extend %fs-b2;
     cursor: pointer;
 

@@ -49,6 +49,7 @@ $(window).on("load", function() {
       let outOfBox = false;
 
       const text = document.querySelector('.circle-text-car');
+      const circle = document.querySelector('.circle-center');
 
       window.addEventListener("mousemove", function (e) {
           var imgPos = img.getBoundingClientRect();
@@ -60,6 +61,8 @@ $(window).on("load", function() {
             rect.setAttribute("cy", e.clientY - imgY + $(".car_video").offset().top - $(window).scrollTop());
             text.style.left = `${(e.clientX - imgX) / 16.8}%`
             text.style.top = `${(e.clientY - imgY + $(".car_video").offset().top - $(window).scrollTop()) / 10.5}%`;
+            circle.style.left = `${(e.clientX - imgX) / 16.8}%`
+            circle.style.top = `${(e.clientY - imgY + $(".car_video").offset().top - $(window).scrollTop()) / 10.5}%`;
 
             if (outOfBox) {
                 rect.setAttribute("r", 150);
@@ -94,9 +97,11 @@ $(window).on("load", function() {
           if(scrollTop > 0) {
               $(".car_video__mark").addClass("disabled");
               text.classList.add('hide');
+              circle.classList.add('hide');
           } else {
               $(".car_video__mark").removeClass("disabled");
               text.classList.remove('hide');
+              circle.classList.remove('hide');
           }
           if(scrollTop > 60) {
               $(".car_video").addClass("car_video--filled");
@@ -108,11 +113,13 @@ $(window).on("load", function() {
           $(this).closest(".car_video__mark").addClass("active");
           rect.setAttribute("r", 200);
           text.classList.add('hidden');
+          circle.classList.add('hidden');
       });
       $(document).on("mouseleave", ".car_video__mark, .car_video__mark_content", function(e) {
           $(this).closest(".car_video__mark").removeClass("active");
           rect.setAttribute("r", 150);
           text.classList.remove('hidden');
+          circle.classList.remove('hidden');
       });
       function setMarkPositions() {
         //   $(".car_video__mark[data-positioned=true]").each(function() {

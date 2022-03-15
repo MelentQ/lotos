@@ -7,7 +7,11 @@
   text-transform: uppercase;
   line-height: 1;
   pointer-events: auto;
-  color: #D8D8D8;
+  
+  &:link,
+  &:visited {
+    color: #d8d8d8;
+  }
 
   transition: color 0.3s ease;
 

@@ -38,12 +38,18 @@
 .footer__label {
   @extend %fs-t4;
   margin-bottom: 5px;
+  color: #d8d8d8;
 }
 .footer__link {
   position: relative;
 
   color: var(--primary-color) !important;
   @extend %fs-t4;
+
+  &:link,
+  &:visited {
+    color: #d8d8d8;
+  }
 
   &::after {
     content: '';
@@ -75,7 +81,7 @@
 }
 
 span.footer__link {
-  color: #D8D8D8 !important;
+  color: white !important;
 
   &::after {
     content: none;
